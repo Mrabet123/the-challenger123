@@ -1,0 +1,157 @@
+{
+  "navbar": {
+    "howItWorks": "Come Funziona",
+    "whyGenZ": "Perché Gen Z",
+    "benefits": "Vantaggi",
+    "earlyAccess": "Accesso Anticipato",
+    "forms": "Moduli",
+    "contact": "Contatto"
+  },
+  "section": {
+    "earlyAccessTitle": "Assicurati il Tuo Accesso Anticipato — Posti Limitati!",
+    "joinMovement": "Unisciti al Movimento",
+    "howItWorks": "Come Funziona",
+    "whyGenZ": "Perché Gen Z È Ossessionata",
+    "benefits": "Vantaggi",
+    "forms": "Moduli"
+  },
+  "buttons": {
+    "joinWaitlist": "Iscriviti alla Lista d'Attesa",
+    "applyVendor": "Candidati come Venditore",
+    "applyAmbassador": "Candidati come Ambassador",
+    "letsGo": "Andiamo!"
+  },
+  "modal": {
+  "welcome": "Benvenuto su The Challenger!"
+},
+"howItWorks": {
+  "step1Title": "Filtra e Trova",
+  "step1Desc": "Sfoglia le sfide per posizione, difficoltà e montepremi. Trova la tua emozione perfetta.",
+  "step2Title": "Prenota e Competi",
+  "step2Desc": "Prenota il tuo posto e presentati pronto a dominare. Dai il massimo.",
+  "step3Title": "Vinci e Mostra",
+  "step3Desc": "Ritira i tuoi premi e condividi la tua vittoria. Costruisci la tua reputazione da campione."
+},
+"heroCarousel": {
+  "challengerHeadline": "Sfida per Dominare. Prenota le Sfide. Vinci Premi.",
+  "challengerSubhead": "Iscriviti alla lista d'attesa e ottieni il 10% di sconto sulla tua prima avventura.",
+  "challengerCTA": "Unisciti come Challenger",
+  "vendorHeadline": "Trasforma la tua attività in una miniera d’oro. Organizza sfide indimenticabili",
+  "vendorSubhead": "Candidati ora senza costi iniziali.",
+  "vendorCTA": "Diventa un Venditore",
+"ambassadorHeadline": "Sei un influencer? Ispira e sponsorizza sfide epiche e guadagna con noi.",  "ambassadorSubhead": "Sei un influencer? Collabora con noi per sponsorizzare e promuovere sfide epiche.",
+  "ambassadorCTA": "Unisciti come Ambassador"
+},
+"whyGenZ": {
+  "title": "Perché Gen Z È Ossessionata",
+  "reasons": [
+    {
+      "title": "Mai più FOMO",
+      "desc": "Non perdere mai le sfide più calde nella tua città. Sii il primo a sapere, il primo a competere."
+    },
+    {
+      "title": "Vantarsi Digitalmente",
+      "desc": "Condividi le tue vittorie su tutte le piattaforme. Costruisci il tuo brand personale da campione."
+    },
+    {
+      "title": "Connettiti & Conquista",
+      "desc": "Incontra amanti dell'adrenalina come te. Forma squadre, fai amicizia, crea ricordi."
+    },
+    {
+      "title": "Vinci Premi Reali",
+      "desc": "Contanti, gadget, esperienze e merchandising esclusivo. Ogni sfida ha premi."
+    }
+  ]
+},
+"lifestyleBenefits": {
+  "title": "Vantaggi",
+  "benefits": [
+    {
+      "title": "Competizione",
+"desc": "Supera i tuoi limiti e scopri di cosa sei davvero capace in base ai tuoi interessi."    },
+    {
+      "title": "Connessione",
+      "desc": "Costruisci amicizie durature con persone che condividono la tua passione per l'avventura."
+    },
+    {
+      "title": "Premi",
+"desc": "Vinci premi, sconti e accesso esclusivo a sfide premium."    },
+    {
+      "title": "Ricordi",
+      "desc": "Crea esperienze indimenticabili di cui parlerai per anni."
+    }
+  ]
+},
+"forms": {
+  "title": "Unisciti al Movimento",
+  "tabs": {
+    "challenger": "Gen Z Challenger",
+    "vendor": "Venditore Business",
+    "ambassador": "Ambasciatore del Brand"
+  },
+  "challenger": {
+    "title": "Lista d'attesa Gen Z",
+    "name": "Nome completo",
+    "email": "Indirizzo email",
+    "phone": "Cellulare (+39...)",
+    "age": "Età",
+    "location": "Località (Città, Paese)",
+    "types": "Tipi di sfide preferite",
+    "hear": "Come ci hai conosciuto?",
+    "hear_social": "Social Media",
+    "hear_friend": "Amico/Passaparola",
+    "hear_online": "Ricerca Online",
+    "hear_event": "Evento/Competizione",
+    "agree": "Accetto di ricevere aggiornamenti e comunicazioni di marketing",
+    "submit": "Iscriviti alla lista"
+  },
+  "vendor": {
+    "title": "Onboarding Venditore",
+    "business": "Nome Azienda",
+    "vat": "Partita IVA",
+    "venue": "Tipo di locale (Pizzeria, Bar, Palestra...)",
+    "contact": "Referente",
+    "email": "Indirizzo email",
+    "phone": "Numero di telefono",
+    "address": "Indirizzo del locale",
+    "footfall": "Affluenza media settimanale",
+    "footfall_0_100": "0-100 persone",
+    "footfall_100_500": "100-500 persone",
+    "footfall_500_1000": "500-1000 persone",
+    "footfall_1000": "1000+ persone",
+    "challenges": "Sfide di interesse",
+    "days": "Giorni/Ore preferiti",
+    "agree": "Accetto i termini e condizioni per i venditori",
+    "submit": "Candidati come Venditore"
+  },
+  "ambassador": {
+    "title": "Candidatura Ambassador",
+    "name": "Nome completo",
+    "email": "Indirizzo email",
+    "phone": "Numero di telefono",
+    "age": "Fascia d'età",
+    "age_18_22": "18-22",
+    "age_23_26": "23-26",
+    "age_27_30": "27-30",
+    "location": "Località (Città, Paese)",
+    "linkedin": "Profilo LinkedIn",
+    "instagram": "Handle Instagram",
+    "tiktok": "Handle TikTok",
+    "promote": "Come promuoverai The Challenger?",
+    "experience": "Esperienza passata in marketing/promozione",
+    "resources": "Risorse disponibili (follower, network, ecc.)",
+    "agree": "Accetto i termini di commissione (10% per prenotazione)",
+    "submit": "Candidati come Ambassador"
+  }
+},
+"footer": {
+  "built": "Creato per Gen Z dal Team The Challenger",
+  "copyright": "© 2024 The Challenger. Tutti i diritti riservati."
+},
+"earlyAccess": {
+  "title": "Assicurati il Tuo Accesso Anticipato — Posti Limitati!",
+  "discount": "10% di sconto sulla prima sfida",
+  "commission": "20% di commissione referral a vita",
+  "cta": "Iscriviti ora"
+}
+}

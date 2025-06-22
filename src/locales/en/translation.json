@@ -1,0 +1,158 @@
+{
+  "navbar": {
+    "howItWorks": "How It Works",
+    "whyGenZ": "Why Gen Z",
+    "benefits": "Benefits",
+    "earlyAccess": "Early Access",
+    "forms": "Forms",
+    "contact": "Contact"
+  },
+  "section": {
+    "earlyAccessTitle": "Lock In Your Early Access — Limited Spots!",
+    "joinMovement": "Join The Movement",
+    "howItWorks": "How It Works",
+    "whyGenZ": "Why Gen Z Is Obsessed",
+    "benefits": "Lifestyle Benefits",
+    "forms": "Join The Movement"
+  },
+  "buttons": {
+    "joinWaitlist": "Join Waitlist",
+    "applyVendor": "Apply as Vendor",
+    "applyAmbassador": "Apply as Ambassador",
+    "letsGo": "Let's Go!"
+  },
+  "modal": {
+  "welcome": "Welcome to The Challenger!"
+},
+  "howItWorks": {
+    "step1Title": "Filter & Find",
+    "step1Desc": "Browse challenges by location, difficulty, and prize pool. Find your perfect thrill.",
+    "step2Title": "Book & Compete",
+    "step2Desc": "Reserve your spot and show up ready to dominate. Bring your A-game.",
+    "step3Title": "Win & Flex",
+    "step3Desc": "Claim your prizes and share your victory. Build your reputation as a champion."
+  },
+  "heroCarousel": {
+    "challengerHeadline": "Dare to Dominate. Book Challenges. Win Prizes.",
+    "challengerSubhead": "Join the waitlist and get 10% off your first adventure.",
+    "challengerCTA": "Join as Challenger",
+    "vendorHeadline": "Turn ur business into a gold mine. Host unforgettable challenges",
+    "vendorSubhead": "Apply now with zero upfront cost.",
+    "vendorCTA": "Become a Vendor",
+    "ambassadorHeadline": "Are you an influencer? Inspire & Sponsor epic Challenges and earn with us.",
+    "ambassadorSubhead": "Are you an influencer? Partner with us to sponsor and promote epic challenges.",
+    "ambassadorCTA": "Join as Ambassador"
+  },
+  "whyGenZ": {
+    "title": "Why Gen Z Is Obsessed",
+    "reasons": [
+      {
+        "title": "No More FOMO",
+        "desc": "Never miss out on the hottest challenges in your city. Be first to know, first to compete."
+      },
+      {
+        "title": "Digital Bragging Rights",
+        "desc": "Share your wins across all platforms. Build your personal brand as a champion."
+      },
+      {
+        "title": "Connect & Conquer",
+        "desc": "Meet like-minded thrill-seekers. Form teams, make friends, create memories."
+      },
+      {
+        "title": "Win Real Prizes",
+        "desc": "Cash, gadgets, experiences, and exclusive merchandise. Every challenge has rewards."
+      }
+    ]
+  },
+  "lifestyleBenefits": {
+    "title": "Lifestyle Benefits",
+    "benefits": [
+      {
+        "title": "Competition",
+        "desc": "Push your limits and discover what you're truly capable of achieving based on ur own interest."},
+      {
+        "title": "Connection",
+        "desc": "Build lasting friendships with people who share your passion for adventure."
+      },
+      {
+        "title": "Rewards",
+        "desc": "win prizes, discounts, and exclusive access to premium challenges."},
+      {
+        "title": "Memories",
+        "desc": "Create unforgettable experiences that you'll be talking about for years."
+      }
+    ]
+  },
+  "forms": {
+    "title": "Join The Movement",
+    "tabs": {
+      "challenger": "Gen Z Challenger",
+      "vendor": "Business Vendor",
+      "ambassador": "Brand Ambassador"
+    },
+    "challenger": {
+      "title": "Gen Z Joiner Waitlist",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Mobile (+39...)",
+      "age": "Age",
+      "location": "Location (City, Country)",
+      "types": "Preferred Challenge Types",
+      "hear": "How did you hear about us?",
+      "hear_social": "Social Media",
+      "hear_friend": "Friend/Word of Mouth",
+      "hear_online": "Online Search",
+      "hear_event": "Event/Competition",
+      "agree": "I agree to receive updates and marketing communications",
+      "submit": "Join Waitlist"
+    },
+    "vendor": {
+      "title": "Vendor Onboarding",
+      "business": "Business Name",
+      "vat": "VAT Number",
+      "venue": "Venue Type (Pizzeria, Bar, Gym...)",
+      "contact": "Contact Person",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "address": "Venue Address",
+      "footfall": "Average Weekly Footfall",
+      "footfall_0_100": "0-100 people",
+      "footfall_100_500": "100-500 people",
+      "footfall_500_1000": "500-1000 people",
+      "footfall_1000": "1000+ people",
+      "challenges": "Challenges Interested In",
+      "days": "Preferred Days/Times",
+      "agree": "I agree to the vendor terms and conditions",
+      "submit": "Apply as Vendor"
+    },
+    "ambassador": {
+      "title": "Ambassador Application",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "age": "Age Range",
+      "age_18_22": "18-22",
+      "age_23_26": "23-26",
+      "age_27_30": "27-30",
+      "location": "Location (City, Country)",
+      "linkedin": "LinkedIn Profile",
+      "instagram": "Instagram Handle",
+      "tiktok": "TikTok Handle",
+      "promote": "How will you promote The Challenger?",
+      "experience": "Past marketing/promotion experience",
+      "resources": "Resources available (followers, network, etc.)",
+      "agree": "I agree to commission terms (10% per booking)",
+      "submit": "Apply as Ambassador"
+    }
+  },
+  "footer": {
+    "built": "Built for Gen Z by The Challenger Team",
+    "copyright": "© 2024 The Challenger. All rights reserved."
+  },
+  "earlyAccess": {
+    "title": "Lock In Your Early Access — Limited Spots!",
+    "discount": "10% First Challenge Discount",
+    "commission": "20% Referral Commission for Life",
+    "cta": "Sign Up Now"
+  }
+}
