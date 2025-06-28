@@ -9,11 +9,90 @@ interface FormsProps {
   onFormSubmit: (formType: string) => void
 }
 
+const SuccessModal = ({ onClose }: { onClose: () => void }) => {
+  const { t } = useTranslation()
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        background: "rgba(60,0,90,0.18)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 9999,
+        backdropFilter: "blur(2px)",
+      }}
+    >
+      <div
+        style={{
+          background: "linear-gradient(135deg, #fff 80%, #e9d7fa 100%)",
+          padding: "2.7rem 2.7rem 2.2rem 2.7rem",
+          borderRadius: "2rem",
+          boxShadow: "0 12px 40px rgba(149,77,230,0.22)",
+          textAlign: "center",
+          maxWidth: 400,
+          minWidth: 290,
+          position: "relative",
+          border: "3px solid #954de6",
+          animation: "popIn 0.4s cubic-bezier(.68,-0.55,.27,1.55)",
+        }}
+      >
+        <div style={{ fontSize: "3.5rem", marginBottom: "0.5rem", lineHeight: 1 }}>
+          <span role="img" aria-label="confetti">🎊</span>
+          <span role="img" aria-label="party">🥳</span>
+          <span role="img" aria-label="tada">🎉</span>
+        </div>
+        <h2 style={{ marginBottom: "1rem", color: "#954de6", fontWeight: 800, fontSize: "2.1rem" }}>
+          {t("modal.successTitle")}
+        </h2>
+        <p style={{ fontSize: "1.18rem", marginBottom: "1.7rem", color: "#4b2067" }}>
+          {t("modal.successMessage")}
+          <span style={{ fontSize: "1.5rem" }}>✨</span>
+        </p>
+        <button
+          style={{
+            marginTop: "1rem",
+            padding: "0.9rem 2.5rem",
+            borderRadius: "1rem",
+            background: "linear-gradient(90deg, #954de6 60%, #7c3aed 100%)",
+            color: "#fff",
+            border: "none",
+            fontWeight: 700,
+            fontSize: "1.15rem",
+            cursor: "pointer",
+            boxShadow: "0 2px 12px rgba(149,77,230,0.13)",
+            transition: "background 0.2s",
+            letterSpacing: "0.5px",
+          }}
+          onClick={onClose}
+        >
+          <span role="img" aria-label="close">💜</span> {t("modal.close")}
+        </button>
+        <style>
+          {`
+            @keyframes popIn {
+              0% { transform: scale(0.7); opacity: 0; }
+              80% { transform: scale(1.05); opacity: 1; }
+              100% { transform: scale(1); }
+            }
+          `}
+        </style>
+      </div>
+    </div>
+  )
+}
+
 const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
   const { t } = useTranslation()
   const [activeForm, setActiveForm] = useState<"challenger" | "vendor" | "ambassador">("challenger")
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState<{ text: string; isError: boolean } | null>(null)
+const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   // Generic tab-click handler
   const handleSubmit = (e: FormEvent, formType: string) => {
@@ -41,13 +120,12 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
         body: fd,
       })
       const data = await resp.json()
-      // ...existing code...
-if (data.status === "success") {
-  setMessage({ text: "Thank you! Your submission was received.", isError: false });
-  form.reset();
-} else {
-  throw new Error(data.message || "Submission failed");
-}
+      if (data.status === "success") {
+        setShowSuccessModal(true);
+        form.reset();
+      } else {
+        throw new Error(data.message || "Submission failed");
+      }
     } catch (err: any) {
       console.error(err)
       setMessage({ text: "Error: " + err.message, isError: true })
@@ -70,6 +148,8 @@ if (data.status === "success") {
   }, [])
 
   return (
+    <>
+      {showSuccessModal && <SuccessModal onClose={() => setShowSuccessModal(false)} />}
     <section id="forms" className="forms-section">
       <div className="container">
         <h2 className="section-title">{t("forms.title")}</h2>
@@ -102,6 +182,7 @@ if (data.status === "success") {
                 className="form-card"
                 onSubmit={handleChallengerSubmit}
               >
+                
                 <h3>{t("forms.challenger.title")}</h3>
 
                 <div className="form-row">
@@ -173,17 +254,6 @@ if (data.status === "success") {
                 </button>
               </form>
 
-              {message && (
-                <div
-                  className={`mt-4 p-3 rounded ${
-                    message.isError
-                      ? "bg-red-500 text-white"
-                      : "bg-green-500 text-white"
-                  }`}
-                >
-                  {message.text}
-                </div>
-              )}
             </>
           )}
 
@@ -360,6 +430,7 @@ if (data.status === "success") {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

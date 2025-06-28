@@ -22,7 +22,10 @@
     "letsGo": "Andiamo!"
   },
   "modal": {
-  "welcome": "Benvenuto su The Challenger!"
+  "welcome": "Benvenuto su The Challenger!",
+  "successTitle": "Invio riuscito!",
+  "successMessage": "Grazie per esserti unito alla sfida!",
+  "close": "Chiudi"
 },
 "howItWorks": {
   "step1Title": "Filtra e Trova",
