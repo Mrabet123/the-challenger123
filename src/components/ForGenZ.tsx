@@ -1,16 +1,22 @@
 import { useTranslation } from "react-i18next"
+import { useEffect, useState } from "react"
 
-const WhyGenZ = () => {
+const ForGenZ = () => {
   const { t } = useTranslation()
-  const reasons = t("whyGenZ.reasons", { returnObjects: true }) as Array<{ title: string; desc: string; gradient: string }>
+  const [reasons, setReasons] = useState<Array<{ title: string; desc: string }>>([])
 
   // Add gradients in code since they're not in translation
   const gradients = ["purple-orange", "orange-yellow", "yellow-blue", "blue-purple"]
 
+  useEffect(() => {
+    // Only run on client
+    setReasons(t("forGenZ.reasons", { returnObjects: true }) as Array<{ title: string; desc: string }>)
+  }, [t])
+
   return (
-    <section id="why-gen-z" className="why-gen-z">
+    <section id="for-gen-z" className="why-gen-z">
       <div className="container">
-        <h2 className="section-title">{t("whyGenZ.title")}</h2>
+        <h2 className="section-title">{t("forGenZ.title")}</h2>
         <div className="reasons-grid">
           {reasons.map((reason, index) => (
             <div key={index} className={`reason-card ${gradients[index]}`}>
@@ -24,4 +30,4 @@ const WhyGenZ = () => {
   )
 }
 
-export default WhyGenZ
+export default ForGenZ

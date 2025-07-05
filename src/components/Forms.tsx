@@ -4,7 +4,7 @@ import React, { useState, useEffect, FormEvent } from "react"
 import { useTranslation } from "react-i18next"
 
 const SHEETS_WEBHOOK_URL =
-"https://script.google.com/macros/s/AKfycbz9UNtk6gD3K-0Gw7IYc_o-YrLcJBrekI2uL0GsOhBcTmBvbpHjK2qhCEgpv33_9covOQ/exec"
+"https://script.google.com/macros/s/AKfycbxH3fx6sFH8PDD-gQTpSUNsy0qkvL8h6F7z9LB0tRk-HwWs0gtuHBvT4vkAQpYJDthHEg/exec"
 interface FormsProps {
   onFormSubmit: (formType: string) => void
 }
@@ -72,6 +72,22 @@ const SuccessModal = ({ onClose }: { onClose: () => void }) => {
     </div>
   )
 }
+
+const Spinner = () => (
+  <span
+    style={{
+      display: "inline-block",
+      width: "1.5em",
+      height: "1.5em",
+      border: "3px solid #fff",
+      borderTop: "3px solid #954de6",
+      borderRadius: "50%",
+      animation: "spin 0.7s linear infinite",
+      verticalAlign: "middle",
+      marginRight: "0.5em"
+    }}
+  />
+);
 
 const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
   const { t } = useTranslation()
@@ -233,9 +249,7 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                   className="submit-btn purple"
                   disabled={loading}
                 >
-                  {loading
-                    ? t("forms.challenger.submitting")
-                    : t("forms.challenger.submit")}
+                  {loading ? <Spinner /> : t("forms.challenger.submit")}
                 </button>
               </form>
             )}
@@ -246,69 +260,69 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                 className="form-card"
                 onSubmit={handleVendorSubmit}
               >
-<input type="hidden" name="formType" value="Vendor" />
-                <h3>Vendor Onboarding</h3>
+                <input type="hidden" name="formType" value="Vendor" />
+                <h3>{t("forms.vendor.title")}</h3>
                 <div className="form-row">
                   <input
                     name="BusinessName"
                     type="text"
-                    placeholder="Business Name"
+                    placeholder={t("forms.vendor.business")}
                     required
                   />
                   <input
                     name="VATNumber"
                     type="text"
-                    placeholder="VAT Number"
+                    placeholder={t("forms.vendor.vat")}
                     required
                   />
                 </div>
                 <input
                   name="VenueType"
                   type="text"
-                  placeholder="Venue Type (Pizzeria, Bar, Gym...)"
+                  placeholder={t("forms.vendor.venue")}
                   required
                 />
                 <div className="form-row">
                   <input
                     name="ContactPerson"
                     type="text"
-                    placeholder="Contact Person"
+                    placeholder={t("forms.vendor.contact")}
                     required
                   />
                   <input
                     name="Email"
                     type="email"
-                    placeholder="Email Address"
+                    placeholder={t("forms.vendor.email")}
                     required
                   />
                 </div>
                 <input
                   name="Phone"
                   type="tel"
-                  placeholder="Phone Number"
+                  placeholder={t("forms.vendor.phone")}
                   required
                 />
                 <textarea
                   name="Address"
-                  placeholder="Venue Address"
+                  placeholder={t("forms.vendor.address")}
                   required
                 />
                 <select name="Footfall" required>
-                  <option value="">Average Weekly Footfall</option>
-                  <option value="0-100">0-100 people</option>
-                  <option value="100-500">100-500 people</option>
-                  <option value="500-1000">500-1000 people</option>
-                  <option value="1000+">1000+ people</option>
+                  <option value="">{t("forms.vendor.footfall")}</option>
+                  <option value="0-100">{t("forms.vendor.footfall_0_100")}</option>
+                  <option value="100-500">{t("forms.vendor.footfall_100_500")}</option>
+                  <option value="500-1000">{t("forms.vendor.footfall_500_1000")}</option>
+                  <option value="1000+">{t("forms.vendor.footfall_1000")}</option>
                 </select>
                 <input
                   name="Challenges"
                   type="text"
-                  placeholder="Challenges Interested In"
+                  placeholder={t("forms.vendor.challenges")}
                 />
                 <input
                   name="PreferredTimes"
                   type="text"
-                  placeholder="Preferred Days/Times"
+                  placeholder={t("forms.vendor.days")}
                 />
                 <label className="checkbox-label">
                   <input
@@ -317,14 +331,14 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                     value="yes"
                     required
                   />
-                  I agree to the vendor terms and conditions
+                  {t("forms.vendor.agree")}
                 </label>
                 <button
                   type="submit"
                   className="submit-btn orange"
                   disabled={loading}
                 >
-                  {loading ? "Submitting…" : "Apply as Vendor"}
+                  {loading ? <Spinner /> : t("forms.vendor.submit")}
                 </button>
               </form>
             )}
@@ -336,18 +350,18 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                 onSubmit={handleAmbassadorSubmit}
               >
                 <input type="hidden" name="formType" value="Ambassador" />
-                <h3>Ambassador Application</h3>
+                <h3>{t("forms.ambassador.title")}</h3>
                 <div className="form-row">
                   <input
                     name="FullName"
                     type="text"
-                    placeholder="Full Name"
+                    placeholder={t("forms.ambassador.name")}
                     required
                   />
                   <input
                     name="Email"
                     type="email"
-                    placeholder="Email Address"
+                    placeholder={t("forms.ambassador.email")}
                     required
                   />
                 </div>
@@ -355,52 +369,52 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                   <input
                     name="Phone"
                     type="tel"
-                    placeholder="Phone Number"
+                    placeholder={t("forms.ambassador.phone")}
                     required
                   />
                   <select name="AgeRange" required>
-                    <option value="">Age Range</option>
-                    <option value="18-22">18-22</option>
-                    <option value="23-26">23-26</option>
-                    <option value="27-30">27-30</option>
+                    <option value="">{t("forms.ambassador.age")}</option>
+                    <option value="18-22">{t("forms.ambassador.age_18_22")}</option>
+                    <option value="23-26">{t("forms.ambassador.age_23_26")}</option>
+                    <option value="27-30">{t("forms.ambassador.age_27_30")}</option>
                   </select>
                 </div>
                 <input
                   name="Location"
                   type="text"
-                  placeholder="Location (City, Country)"
+                  placeholder={t("forms.ambassador.location")}
                   required
                 />
                 <div className="form-row">
                   <input
                     name="LinkedIn"
                     type="url"
-                    placeholder="LinkedIn Profile"
+                    placeholder={t("forms.ambassador.linkedin")}
                   />
                   <input
                     name="Instagram"
                     type="url"
-                    placeholder="Instagram Handle"
+                    placeholder={t("forms.ambassador.instagram")}
                   />
                 </div>
                 <input
                   name="TikTok"
-                    type="url"
-                    placeholder="TikTok Handle"
+                  type="url"
+                  placeholder={t("forms.ambassador.tiktok")}
                 />
                 <textarea
                   name="PromotionPlan"
-                  placeholder="How will you promote The Challenger?"
+                  placeholder={t("forms.ambassador.promote")}
                   required
                 />
                 <textarea
                   name="Experience"
-                  placeholder="Past marketing/promotion experience"
+                  placeholder={t("forms.ambassador.experience")}
                 />
                 <input
                   name="Resources"
                   type="text"
-                  placeholder="Resources available (followers, network, etc.)"
+                  placeholder={t("forms.ambassador.resources")}
                 />
                 <label className="checkbox-label">
                   <input
@@ -409,14 +423,14 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                     value="yes"
                     required
                   />
-                  I agree to commission terms (10% per booking)
+                  {t("forms.ambassador.agree")}
                 </label>
                 <button
                   type="submit"
                   className="submit-btn yellow"
                   disabled={loading}
                 >
-                  {loading ? "Submitting…" : "Apply as Ambassador"}
+                  {loading ? <Spinner /> : t("forms.ambassador.submit")}
                 </button>
               </form>
             )}
@@ -433,6 +447,11 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
           </div>
         </div>
       </section>
+      <style>{`
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </>
   )
 }

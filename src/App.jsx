@@ -7,7 +7,9 @@ import "./App.css"
 import Navbar from "./components/Navbar"
 import HeroCarousel from "./components/HeroCarousel"
 import HowItWorks from "./components/HowItWorks"
-import WhyGenZ from "./components/WhyGenZ"
+import ForGenZ from "./components/ForGenZ"
+import ForBusinesses from "./components/ForBusinesses"
+import ForAmbassadors from "./components/ForAmbassadors"
 import LifestyleBenefits from "./components/LifestyleBenefits"
 import EarlyAccess from "./components/EarlyAccess"
 import Forms from "./components/Forms"
@@ -28,7 +30,9 @@ function App() {
       <Navbar />
       <HeroCarousel />
       <HowItWorks />
-      <WhyGenZ />
+      <ForGenZ />
+      <ForBusinesses />
+      <ForAmbassadors />
       <LifestyleBenefits />
       <EarlyAccess />
       <Forms onFormSubmit={handleFormSubmit} />

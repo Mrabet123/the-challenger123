@@ -1,11 +1,12 @@
 {
   "navbar": {
     "howItWorks": "How It Works",
-    "whyGenZ": "Why Gen Z",
-    "benefits": "Benefits",
-    "earlyAccess": "Early Access",
-    "forms": "Forms",
-    "contact": "Contact"
+    "forGenZ": "For Gen Z",
+    "forBusinesses": "For Businesses",
+    "forAmbassadors": "For Ambassadors",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "joinWaitlist": "Join the Waitlist!"
   },
   "section": {
     "earlyAccessTitle": "Lock In Your Early Access — Limited Spots!",
@@ -28,6 +29,12 @@
   "close": "Close"
 },
   "howItWorks": {
+  "tabs": {
+    "challenger": "Gen Z Challenger",
+    "vendor": "Business Owner",
+    "ambassador": "Ambassador"
+  },
+  "challenger": {
     "step1Title": "Filter & Find",
     "step1Desc": "Browse challenges by location, difficulty, and prize pool. Find your perfect thrill.",
     "step2Title": "Book & Compete",
@@ -35,6 +42,23 @@
     "step3Title": "Win & Flex",
     "step3Desc": "Claim your prizes and share your victory. Build your reputation as a champion."
   },
+  "vendor": {
+    "step1Title": "List Your Venue",
+    "step1Desc": "Register your business and set up your challenge offerings in minutes.",
+    "step2Title": "Host & Engage",
+    "step2Desc": "Welcome Gen Z challengers, host epic events, and boost your brand visibility.",
+    "step3Title": "Grow & Earn",
+    "step3Desc": "Attract new customers, fill your venue, and earn extra revenue from every challenge."
+  },
+  "ambassador": {
+    "step1Title": "Apply & Get Approved",
+    "step1Desc": "Submit your application and join our exclusive ambassador community.",
+    "step2Title": "Promote & Inspire",
+    "step2Desc": "Share challenges, inspire your audience, and help us grow the movement.",
+    "step3Title": "Earn & Shine",
+    "step3Desc": "Earn rewards, gain recognition, and unlock special perks as a top ambassador."
+  }
+},
   "heroCarousel": {
     "challengerHeadline": "Dare to Dominate. Book Challenges. Win Prizes.",
     "challengerSubhead": "Join the waitlist and get 10% off your first adventure.",
@@ -110,52 +134,114 @@
       "submit": "Join Waitlist"
     },
     "vendor": {
-      "title": "Vendor Onboarding",
+      "title": "Vendor Registration",
       "business": "Business Name",
       "vat": "VAT Number",
-      "venue": "Venue Type (Pizzeria, Bar, Gym...)",
+      "venue": "Venue Type",
       "contact": "Contact Person",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "address": "Venue Address",
-      "footfall": "Average Weekly Footfall",
-      "footfall_0_100": "0-100 people",
-      "footfall_100_500": "100-500 people",
-      "footfall_500_1000": "500-1000 people",
-      "footfall_1000": "1000+ people",
-      "challenges": "Challenges Interested In",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "footfall": "Expected Footfall",
+      "footfall_0_100": "0-100",
+      "footfall_100_500": "100-500",
+      "footfall_500_1000": "500-1000",
+      "footfall_1000": "1000+",
+      "challenges": "Challenges Offered",
       "days": "Preferred Days/Times",
-      "agree": "I agree to the vendor terms and conditions",
-      "submit": "Apply as Vendor"
+      "agree": "I agree to the terms and conditions.",
+      "submit": "Submit",
+      "submitting": "Submitting..."
     },
     "ambassador": {
       "title": "Ambassador Application",
       "name": "Full Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
+      "email": "Email",
+      "phone": "Phone",
       "age": "Age Range",
       "age_18_22": "18-22",
       "age_23_26": "23-26",
       "age_27_30": "27-30",
-      "location": "Location (City, Country)",
-      "linkedin": "LinkedIn Profile",
-      "instagram": "Instagram Handle",
-      "tiktok": "TikTok Handle",
-      "promote": "How will you promote The Challenger?",
-      "experience": "Past marketing/promotion experience",
-      "resources": "Resources available (followers, network, etc.)",
-      "agree": "I agree to commission terms (10% per booking)",
-      "submit": "Apply as Ambassador"
+      "location": "Location",
+      "linkedin": "LinkedIn Profile (optional)",
+      "instagram": "Instagram Profile (optional)",
+      "tiktok": "TikTok Profile (optional)",
+      "promote": "How will you promote us?",
+      "experience": "Relevant Experience (optional)",
+      "resources": "Resources/Network (optional)",
+      "agree": "I agree to the ambassador commission terms.",
+      "submit": "Submit",
+      "submitting": "Submitting..."
     }
   },
   "footer": {
-    "built": "Built for Gen Z by The Challenger Team",
-    "copyright": "© 2024 The Challenger. All rights reserved."
+    "brandDesc1": " A global platform making every experience",
+    "brandDesc2": "a challenge worth sharing.",
+    "about": "About",
+    "faqs": "FAQs",
+    "terms": "Terms of Use",
+    "privacy": "Privacy",
+    "contact": "Contact Us",
+    "partner": "Partner With Us",
+    "joinWaitlist": "Join the Waitlist",
+    "copyright": "All rights reserved."
   },
   "earlyAccess": {
     "title": "Lock In Your Early Access — Limited Spots!",
     "discount": "10% First Challenge Discount",
     "commission": "20% Referral Commission for Life",
     "cta": "Sign Up Now"
+  },
+  "forGenZ": {
+    "title": "For Gen Z Challengers",
+    "reasons": [
+      { "title": "No More FOMO", "desc": "Never miss out on the hottest challenges in your city. Be first to know, first to compete." },
+      { "title": "Digital Bragging Rights", "desc": "Share your wins across all platforms. Build your personal brand as a champion." },
+      { "title": "Connect & Conquer", "desc": "Meet like-minded thrill-seekers. Form teams, make friends, create memories." },
+      { "title": "Win Real Prizes", "desc": "Cash, gadgets, experiences, and exclusive merchandise. Every challenge has rewards." }
+    ]
+  },
+  "forBusinesses": {
+    "title": "For Business Owners",
+    "reasons": [
+      { "title": "Boost Your Brand", "desc": "Host epic challenges and attract Gen Z customers to your venue." },
+      { "title": "Fill Your Venue", "desc": "Drive foot traffic and keep your business buzzing with new faces." },
+      { "title": "Earn More", "desc": "Increase your revenue with every challenge and event you host." },
+      { "title": "Stand Out", "desc": "Be known as the go-to spot for unforgettable experiences." }
+    ]
+  },
+  "forAmbassadors": {
+    "title": "For Ambassadors",
+    "reasons": [
+      { "title": "Inspire Your Audience", "desc": "Share challenges and motivate your followers to join the movement." },
+      { "title": "Grow Your Influence", "desc": "Partner with us and expand your reach as a top ambassador." },
+      { "title": "Earn Rewards", "desc": "Unlock exclusive perks, commissions, and recognition for your efforts." },
+      { "title": "Be a Leader", "desc": "Help shape the future of challenges and inspire the next generation." }
+    ]
+  },
+  "about": {
+    "heroTitle": "The Gen Z Team Behind The Challenger",
+    "heroText": "Born between Bellano and Milan, The Challenger is created by a team of Gen Z entrepreneurs, creatives, and marketers who believe experiences should be interactive, rewarding, and memorable. We're passionate about transforming nightlife, fitness, education, and travel into challenge hubs powered by youth energy.",
+    "missionTitle": "Our Mission",
+    "missionText": "To empower young people to turn every experience into a challenge worth sharing, fostering creativity, connection, and growth across the globe.",
+    "valuesTitle": "Our Values",
+    "value1": "We embrace new ideas and creative solutions.",
+    "value2": "We build bridges between people and cultures.",
+    "value3": "We help Gen Z unlock their full potential.",
+    "value4": "We believe every challenge should be rewarding and memorable.",
+    "teamTitle": "Meet the Team",
+    "fullTeamBtn": "Meet the Full Team",
+      "heroQuote": "“ Great things are done by a series of small things brought together. ”"
+
+  },
+  "waitlist": {
+    "title": "Join the Waitlist!",
+    "desc": "Be the first to access exclusive challenges and rewards. Sign up now and secure your spot in The Challenger movement.",
+    "cta": "See Available Challenges & Join"
+  },
+  "brochure": {
+    "title": "Download Our Brochure",
+    "desc": "Discover how The Challenger works and all the benefits for you. Download our PDF guide for all the details!",
+    "button": "Download Brochure"
   }
 }

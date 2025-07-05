@@ -1,9 +1,10 @@
 // app/layout.tsx (or RootLayout.tsx)
 import type { Metadata } from 'next'
-import './globals.css'
+import "../src/App.css"; // Make sure this path is correct
+import "./globals.css";   // If you have a globals.css
 
 export const metadata: Metadata = {
-  title: 'The Challenger',
+  title: 'ChallenZee',
   description: 'Created with v0',
   generator: 'v0.dev',
   icons: {
