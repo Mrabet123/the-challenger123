@@ -43,11 +43,9 @@ const Navbar = () => {
 
   const scrollToSection = (id: string) => {
     if (pathname === "/") {
-      // Already on landing page, scroll directly
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     } else {
-      // Navigate to landing page with scrollTo param
       router.push(`/?scrollTo=${id}`);
       setIsMobileMenuOpen(false);
     }
@@ -72,12 +70,18 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className={`nav-menu ${isMobileMenuOpen ? "active" : ""}`}>
-          <button onClick={() => scrollToSection("how-it-works")}>{t("navbar.howItWorks")}</button>
-          <button onClick={() => scrollToSection("for-gen-z")}>{t("navbar.forGenZ")}</button>
-          <button onClick={() => scrollToSection("for-businesses")}>{t("navbar.forBusinesses")}</button>
-          <button onClick={() => scrollToSection("for-ambassadors")}>{t("navbar.forAmbassadors")}</button>
-          <button onClick={() => router.push("/about")}>{t("navbar.aboutUs")}</button>
-          <button onClick={() => scrollToSection("footer")}>{t("navbar.contact")}</button>
+          <button onClick={() => scrollToSection("how-it-works")}>
+            {t("navbar.howItWorks")}
+          </button>
+          <button onClick={() => scrollToSection("for-gen-z")}>
+            {t("navbar.whyJoinUs") || "Why Join Us"}
+          </button>
+          <button onClick={() => router.push("/about")}>
+            {t("navbar.aboutUs")}
+          </button>
+          <button onClick={() => scrollToSection("footer")}>
+            {t("navbar.contact")}
+          </button>
         </div>
 
         {/* Desktop Actions */}
@@ -106,29 +110,29 @@ const Navbar = () => {
                 }}
               >
                 <button
-      onClick={() => changeLang("en")}
-      className="lang-option"
-      style={{ display: "flex", alignItems: "center" }}
-    >
-      <img
-        src="/americanFlag.svg"
-        alt="US Flag"
-        style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
-      />
-      English
-    </button>
-    <button
-      onClick={() => changeLang("it")}
-      className="lang-option"
-      style={{ display: "flex", alignItems: "center" }}
-    >
-      <img
-        src="/italianFlag.svg"
-        alt="IT Flag"
-        style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
-      />
-      Italiano
-    </button>
+                  onClick={() => changeLang("en")}
+                  className="lang-option"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img
+                    src="/americanFlag.svg"
+                    alt="US Flag"
+                    style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
+                  />
+                  English
+                </button>
+                <button
+                  onClick={() => changeLang("it")}
+                  className="lang-option"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img
+                    src="/italianFlag.svg"
+                    alt="IT Flag"
+                    style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
+                  />
+                  Italiano
+                </button>
               </div>
             )}
           </div>
@@ -162,9 +166,7 @@ const Navbar = () => {
               &times;
             </button>
             <button onClick={() => scrollToSection("how-it-works")}>{t("navbar.howItWorks")}</button>
-            <button onClick={() => scrollToSection("for-gen-z")}>{t("navbar.forGenZ")}</button>
-            <button onClick={() => scrollToSection("for-businesses")}>{t("navbar.forBusinesses")}</button>
-            <button onClick={() => scrollToSection("for-ambassadors")}>{t("navbar.forAmbassadors")}</button>
+            <button onClick={() => scrollToSection("for-gen-z")}>{t("navbar.whyJoinUs") || "Why Join Us"}</button>
             <button onClick={() => router.push("/about")}>{t("navbar.aboutUs")}</button>
             <button onClick={() => scrollToSection("footer")}>{t("navbar.contact")}</button>
             <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>

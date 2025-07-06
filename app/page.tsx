@@ -13,7 +13,7 @@ import EarlyAccess from "@/components/EarlyAccess"
 import Forms from "@/components/Forms"
 import Footer from "@/components/Footer"
 import ThankYouModal from "@/components/ThankYouModal"
-
+import WhyJoinUs from "@/components/WhyJoinUs"
 export default function Page() {
   const [showModal, setShowModal] = useState(false)
   const [modalMessage, setModalMessage] = useState("")
@@ -29,6 +29,7 @@ export default function Page() {
       <HeroCarousel />
       <HowItWorks />
       <WhyGenZ />
+      <WhyJoinUs />
       <LifestyleBenefits />
       <EarlyAccess />
       <Forms onFormSubmit={handleFormSubmit} />

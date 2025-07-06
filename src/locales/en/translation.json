@@ -1,7 +1,7 @@
 {
   "navbar": {
     "howItWorks": "How It Works",
-    "forGenZ": "For Gen Z",
+    "whyJoinUs": "Why Join Us?",
     "forBusinesses": "For Businesses",
     "forAmbassadors": "For Ambassadors",
     "aboutUs": "About Us",
@@ -48,7 +48,7 @@
     "step2Title": "Host & Engage",
     "step2Desc": "Welcome Gen Z challengers, host epic events, and boost your brand visibility.",
     "step3Title": "Grow & Earn",
-    "step3Desc": "Attract new customers, fill your venue, and earn extra revenue from every challenge."
+    "step3Desc": "Attract new customers, fill your venue, and earn extra revenue over bookings made + customers spendings."
   },
   "ambassador": {
     "step1Title": "Apply & Get Approved",
@@ -188,7 +188,7 @@
   },
   "earlyAccess": {
     "title": "Lock In Your Early Access — Limited Spots!",
-    "discount": "10% First Challenge Discount",
+    "discount": "up to 50% on First Challenge Discount",
     "commission": "20% Referral Commission for Life",
     "cta": "Sign Up Now"
   },
@@ -221,14 +221,26 @@
   },
   "about": {
     "heroTitle": "The Gen Z Team Behind The Challenger",
-    "heroText": "Born between Bellano and Milan, The Challenger is created by a team of Gen Z entrepreneurs, creatives, and marketers who believe experiences should be interactive, rewarding, and memorable. We're passionate about transforming nightlife, fitness, education, and travel into challenge hubs powered by youth energy.",
+    "heroText": "ChallenZee is a challenge-based platform designed for Gen Z by Gen Z. We connect people through fun, social, and competitive experiences hosted at local venues like bars, cafés, rooftops, and cultural spaces.",
     "missionTitle": "Our Mission",
+    "missionPoints": {
+      "makeFunMeaningful":   { "emoji": "🎉", "text": "Make fun meaningful" },
+      "sparkCompetition":    { "emoji": "🤝", "text": "Spark friendly competition" },
+      "enableConnections":   { "emoji": "🔗", "text": "Enable real connections" },
+      "rewardCreativity":    { "emoji": "💡", "text": "Reward creativity and effort" },
+      "supportBusinesses":   { "emoji": "🏘️", "text": "Support local businesses" }
+    }
+    ,
     "missionText": "To empower young people to turn every experience into a challenge worth sharing, fostering creativity, connection, and growth across the globe.",
-    "valuesTitle": "Our Values",
-    "value1": "We embrace new ideas and creative solutions.",
-    "value2": "We build bridges between people and cultures.",
-    "value3": "We help Gen Z unlock their full potential.",
-    "value4": "We believe every challenge should be rewarding and memorable.",
+   "valuesTitle": "Our Values",
+  "valuesPoints": {
+    "discover":    { "icon": "🧭", "title": "Discover",      "desc": "New experiences" },
+    "challenge":   { "icon": "🏆", "title": "Challenge",     "desc": "Themselves and others" },
+    "connect":     { "icon": "🔗", "title": "Connect",       "desc": "With local scenes" },
+    "getRewarded": { "icon": "🎁", "title": "Get Rewarded",  "desc": "For participation" },
+    "earn":        { "icon": "💰", "title": "Earn",          "desc": "By promoting & hosting experiences" },
+    "build":       { "icon": "👤", "title": "Build",         "desc": "A personal brand that matters" }
+  },
     "teamTitle": "Meet the Team",
     "fullTeamBtn": "Meet the Full Team",
       "heroQuote": "“ Great things are done by a series of small things brought together. ”"

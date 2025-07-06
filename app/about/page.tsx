@@ -58,7 +58,21 @@ export default function AboutPage() {
 	const [mounted, setMounted] = useState(false);
 	useEffect(() => { setMounted(true); }, []);
 	if (!mounted) return null; // Prevent hydration mismatch
-
+  const keys = [
+    "makeFunMeaningful",
+    "sparkCompetition",
+    "enableConnections",
+    "rewardCreativity",
+    "supportBusinesses"
+  ] as const
+const valKeys = [
+  "discover",
+  "challenge",
+  "connect",
+  "getRewarded",
+  "earn",
+  "build"
+] as const;
 	return (
 		<>
 			<Navbar />
@@ -120,59 +134,49 @@ export default function AboutPage() {
 				}} />
 
 				{/* Mission Section */}
-				<section className="about-section mission" style={{
-					background: "#fff",
-					borderRadius: "2rem",
-					boxShadow: "0 2px 16px rgba(149,77,230,0.06)",
-					margin: "2rem auto",
-					maxWidth: 900,
-					padding: "2.5rem 2rem"
-				}}>
-					<div className="container" style={{ textAlign: "center" }}>
-						<FaRocket size={38} color="#954de6" style={{ marginBottom: "1rem" }} />
-						<h2 className="section-title" style={{ marginBottom: "1.5rem" }}>{t("about.missionTitle")}</h2>
-						<p className="about-mission" style={{ fontSize: "1.2rem", fontWeight: 600, color: "#22223b" }}>{t("about.missionText")}</p>
-					</div>
-				</section>
+				 <section className="about-section mission">
+          <div className="container text-center">
+            <FaRocket className="mission-icon" />
+            <h2 className="section-title">{t("about.missionTitle")}</h2>
+            <ul className="mission-grid">
+              {keys.map((key) => {
+                const { emoji, text } = t(
+                  `about.missionPoints.${key}`,
+                  { returnObjects: true }
+                ) as { emoji: string; text: string }
+
+                return (
+                  <li key={key} className="mission-card">
+                    <span className="mission-emoji">{emoji}</span>
+                    <p className="mission-text">{text}</p>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        </section>
 
 				{/* Values Section */}
-				<section className="about-section values" style={{
-					background: "linear-gradient(120deg, #f0e6fa 0%, #fff 100%)",
-					borderRadius: "2rem",
-					boxShadow: "0 2px 16px rgba(149,77,230,0.06)",
-					margin: "2rem auto",
-					maxWidth: 900,
-					padding: "2.5rem 2rem"
-				}}>
-					<div className="container" style={{ textAlign: "center" }}>
-						<h2 className="section-title" style={{ marginBottom: "2rem" }}>{t("about.valuesTitle")}</h2>
-						<ul className="about-values-list" style={{
-							display: "grid",
-							gap: "2rem",
-							listStyle: "none",
-							padding: 0,
-							margin: 0,
-						}}>
-							{[1, 2, 3, 4].map((i) => (
-								<li key={i} style={{
-									background: "#fff",
-									borderRadius: "1.2rem",
-									boxShadow: "0 2px 12px rgba(149,77,230,0.07)",
-									padding: "1.5rem 1rem",
-									display: "flex",
-									flexDirection: "column",
-									alignItems: "center",
-									minHeight: 120,
-									fontWeight: 600,
-									fontSize: "1.05rem"
-								}}>
-									{valueIcons[i - 1]}
-									<span style={{ marginTop: "1rem" }}>{t(`about.value${i}`)}</span>
-								</li>
-							))}
-						</ul>
-					</div>
-				</section>
+				<section className="about-section values">
+  <div className="container text-center">
+    <h2 className="section-title">{t("about.valuesTitle")}</h2>
+    <ul className="values-grid">
+      {valKeys.map((key) => {
+        const { icon, title, desc } = t(
+          `about.valuesPoints.${key}`,
+          { returnObjects: true }
+        ) as { icon: string; title: string; desc: string };
+        return (
+          <li key={key} className="value-card">
+            <span className="value-icon">{icon}</span>
+            <h3 className="value-title">{title}</h3>
+            <p className="value-desc">{desc}</p>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</section>
 
 				{/* Team Section */}
 				<section className="about-section team" style={{
