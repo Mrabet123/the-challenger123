@@ -1,7 +1,7 @@
 // app/layout.tsx (or RootLayout.tsx)
 import type { Metadata } from 'next'
-import "../src/App.css"; // Make sure this path is correct
-import "./globals.css";   // If you have a globals.css
+import "../src/App.css"; // custom styles
+import "./globals.css";  // tailwind/globals
 
 export const metadata: Metadata = {
   title: 'ChallenZee',
