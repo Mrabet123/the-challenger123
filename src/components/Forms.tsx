@@ -4,7 +4,8 @@ import React, { useState, useEffect, FormEvent } from "react"
 import { useTranslation } from "react-i18next"
 
 const SHEETS_WEBHOOK_URL =
-"https://script.google.com/macros/s/AKfycbxH3fx6sFH8PDD-gQTpSUNsy0qkvL8h6F7z9LB0tRk-HwWs0gtuHBvT4vkAQpYJDthHEg/exec"
+  "https://script.google.com/macros/s/AKfycbxH3fx6sFH8PDD-gQTpSUNsy0qkvL8h6F7z9LB0tRk-HwWs0gtuHBvT4vkAQpYJDthHEg/exec"
+
 interface FormsProps {
   onFormSubmit: (formType: string) => void
 }
@@ -87,7 +88,7 @@ const Spinner = () => (
       marginRight: "0.5em"
     }}
   />
-);
+)
 
 const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
   const { t } = useTranslation()
@@ -218,7 +219,7 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                     type="number"
                     placeholder={t("forms.challenger.age")}
                     min={16}
-                    max={30}
+                    max={40}  // Updated max to 40
                     required
                   />
                 </div>
@@ -374,9 +375,10 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                   />
                   <select name="AgeRange" required>
                     <option value="">{t("forms.ambassador.age")}</option>
-                    <option value="18-22">{t("forms.ambassador.age_18_22")}</option>
-                    <option value="23-26">{t("forms.ambassador.age_23_26")}</option>
-                    <option value="27-30">{t("forms.ambassador.age_27_30")}</option>
+                    <option value="18-22">18-22</option>
+                    <option value="23-26">23-26</option>
+                    <option value="27-30">27-30</option>
+                    <option value="31-40">31-40</option>  // Added new range
                   </select>
                 </div>
                 <input

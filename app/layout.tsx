@@ -1,7 +1,7 @@
 // app/layout.tsx (or RootLayout.tsx)
 import type { Metadata } from 'next'
 import './globals.css'
-
+import "../src/App.css";    // <-- import your app.css here
 export const metadata: Metadata = {
   title: 'The Challenger',
   description: 'Created with v0',

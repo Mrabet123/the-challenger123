@@ -1,9 +1,7 @@
 {
   "navbar": {
     "howItWorks": "Come Funziona",
-    "forGenZ": "Per Gen Z",
-    "forBusinesses": "Per Aziende",
-    "forAmbassadors": "Per Ambasciatori",
+    "whyJoinUs": "Perché unirsi a noi?",
     "aboutUs": "Chi Siamo",
     "contact": "Contatto",
     "joinWaitlist": "Unisciti alla lista d'attesa!"
@@ -48,7 +46,7 @@
     "step2Title": "Ospita & Coinvolgi",
     "step2Desc": "Accogli i challenger Gen Z, organizza eventi epici e aumenta la visibilità del tuo brand.",
     "step3Title": "Cresci & Guadagna",
-    "step3Desc": "Attira nuovi clienti, riempi il tuo locale e guadagna da ogni sfida."
+    "step3Desc": "Attira nuovi clienti, riempi il tuo locale e guadagna entrate extra da ogni prenotazione e spesa dei clienti."
   },
   "ambassador": {
     "step1Title": "Candidati & Ottieni l’Accesso",
@@ -187,7 +185,7 @@
 },
 "earlyAccess": {
   "title": "Assicurati il Tuo Accesso Anticipato — Posti Limitati!",
-  "discount": "10% di sconto sulla prima sfida",
+  "discount": "Fino al 50% di sconto sulla prima sfida",
   "commission": "20% di commissione referral a vita",
   "cta": "Iscriviti ora"
 },
@@ -220,7 +218,7 @@
 },
 "about": {
   "heroTitle": "Il team Gen Z dietro The Challenger",
-  "heroText": "Nato tra Bellano e Milano, The Challenger è creato da un team di imprenditori, creativi e marketer Gen Z che credono che le esperienze debbano essere interattive, gratificanti e memorabili. Siamo appassionati di trasformare la nightlife, il fitness, l’istruzione e i viaggi in hub di sfide alimentati dall’energia dei giovani.",
+  "heroText": "ChallenZee è una piattaforma basata su sfide progettata per la Gen Z da parte della Gen Z. Connettiamo le persone attraverso esperienze divertenti, sociali e competitive ospitate in locali come bar, caffè, terrazze e spazi culturali.",
   "missionTitle": "La nostra missione",
   "missionText": "Dare ai giovani il potere di trasformare ogni esperienza in una sfida da condividere, favorendo creatività, connessione e crescita in tutto il mondo.",
   "valuesTitle": "I nostri valori",

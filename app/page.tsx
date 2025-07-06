@@ -7,12 +7,13 @@ import "../src/App.css"
 import Navbar from "../src/components/Navbar"
 import HeroCarousel from "../src/components/HeroCarousel"
 import HowItWorks from "../src/components/HowItWorks"
-import WhyGenZ from "../src/components/WhyGenZ"
 import LifestyleBenefits from "../src/components/LifestyleBenefits"
 import EarlyAccess from "../src/components/EarlyAccess"
 import Forms from "../src/components/Forms"
 import Footer from "../src/components/Footer"
 import ThankYouModal from "../src/components/ThankYouModal"
+import ForGenZ from "../src/components/ForGenZ"
+import WhyJoinUs from "../src/components/WhyJoinUs"
 
 export default function Page() {
   const [showModal, setShowModal] = useState(false)
@@ -28,7 +29,8 @@ export default function Page() {
       <Navbar />
       <HeroCarousel />
       <HowItWorks />
-      <WhyGenZ />
+      <ForGenZ />
+      <WhyJoinUs />
       <LifestyleBenefits />
       <EarlyAccess />
       <Forms onFormSubmit={handleFormSubmit} />

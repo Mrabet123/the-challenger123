@@ -1,9 +1,7 @@
 {
   "navbar": {
     "howItWorks": "How It Works",
-    "forGenZ": "For Gen Z",
-    "forBusinesses": "For Businesses",
-    "forAmbassadors": "For Ambassadors",
+    "whyJoinUs": "Why join us?",
     "aboutUs": "About Us",
     "contact": "Contact",
     "joinWaitlist": "Join the Waitlist!"
@@ -48,7 +46,7 @@
     "step2Title": "Host & Engage",
     "step2Desc": "Welcome Gen Z challengers, host epic events, and boost your brand visibility.",
     "step3Title": "Grow & Earn",
-    "step3Desc": "Attract new customers, fill your venue, and earn extra revenue from every challenge."
+    "step3Desc": "Attract new customers, fill your venue, and earn extra revenue over bookings made + customers spendings."
   },
   "ambassador": {
     "step1Title": "Apply & Get Approved",
@@ -188,7 +186,7 @@
   },
   "earlyAccess": {
     "title": "Lock In Your Early Access — Limited Spots!",
-    "discount": "10% First Challenge Discount",
+    "discount": "Up to 50% First Challenge Discount",
     "commission": "20% Referral Commission for Life",
     "cta": "Sign Up Now"
   },
@@ -221,7 +219,7 @@
   },
   "about": {
     "heroTitle": "The Gen Z Team Behind The Challenger",
-    "heroText": "Born between Bellano and Milan, The Challenger is created by a team of Gen Z entrepreneurs, creatives, and marketers who believe experiences should be interactive, rewarding, and memorable. We're passionate about transforming nightlife, fitness, education, and travel into challenge hubs powered by youth energy.",
+    "heroText": "ChallenZee is a challenge-based platform designed for Gen Z by Gen Z. We connect people through fun, social, and competitive experiences hosted at local venues like bars, cafés, rooftops, and cultural spaces.",
     "missionTitle": "Our Mission",
     "missionText": "To empower young people to turn every experience into a challenge worth sharing, fostering creativity, connection, and growth across the globe.",
     "valuesTitle": "Our Values",
