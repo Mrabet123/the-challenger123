@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
+//import "../app/globals.css"
 import "../src/App.css"
-//changes here
 // Components
 import Navbar from "../src/components/Navbar"
 import HeroCarousel from "../src/components/HeroCarousel"
