@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { FiGlobe } from 'react-icons/fi';
-import i18n from "../i18n";
+import i18n from "../src/i18n";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 

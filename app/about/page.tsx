@@ -3,7 +3,7 @@
 import { useTranslation } from "react-i18next"
 import Image from "next/image"
 import Link from "next/link"
-import Navbar from "../../src/components/Navbar"
+import Navbar from "../../components/Navbar"
 import { useEffect, useState } from "react"
 import { FaLightbulb, FaUsers, FaRocket, FaSmile, FaQuoteLeft } from "react-icons/fa"
 

@@ -1,18 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import "../src/App.css"
+import "../styles/globals.css"
 
 // Components
-import Navbar from "../src/components/Navbar"
-import HeroCarousel from "../src/components/HeroCarousel"
-import HowItWorks from "../src/components/HowItWorks"
-import WhyGenZ from "../src/components/WhyGenZ"
-import LifestyleBenefits from "../src/components/LifestyleBenefits"
-import EarlyAccess from "../src/components/EarlyAccess"
-import Forms from "../src/components/Forms"
-import Footer from "../src/components/Footer"
-import ThankYouModal from "../src/components/ThankYouModal"
+import Navbar from "@/components/Navbar"
+import HeroCarousel from "@/components/HeroCarousel"
+import HowItWorks from "@/components/HowItWorks"
+import WhyGenZ from "@/components/WhyGenZ"
+import LifestyleBenefits from "@/components/LifestyleBenefits"
+import EarlyAccess from "@/components/EarlyAccess"
+import Forms from "@/components/Forms"
+import Footer from "@/components/Footer"
+import ThankYouModal from "@/components/ThankYouModal"
 
 export default function Page() {
   const [showModal, setShowModal] = useState(false)
