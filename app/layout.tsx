@@ -1,10 +1,9 @@
 // app/layout.tsx (or RootLayout.tsx)
 import type { Metadata } from 'next'
-import "../src/App.css"; // custom styles
-import "./globals.css";  // tailwind/globals
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ChallenZee',
+  title: 'The Challenger',
   description: 'Created with v0',
   generator: 'v0.dev',
   icons: {
