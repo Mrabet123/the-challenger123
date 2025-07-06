@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import "../app/globals.css"
 import "../src/App.css"
 
 // Components
