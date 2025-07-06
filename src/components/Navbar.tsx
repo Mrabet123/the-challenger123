@@ -105,22 +105,30 @@ const Navbar = () => {
                   zIndex: 10,
                 }}
               >
-                <button onClick={() => i18n.changeLanguage("en")} className="lang-option" style={{ display: "flex", alignItems: "center" }}>
-                  <img
-                    src="/americanFlag.svg"
-                    alt="US Flag"
-                    style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
-                  />
-                  English
-                </button>
-                <button onClick={() => i18n.changeLanguage("it")} className="lang-option" style={{ display: "flex", alignItems: "center" }}>
-                  <img
-                    src="/italianFlag.svg"
-                    alt="IT Flag"
-                    style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
-                  />
-                  Italiano
-                </button>
+                <button
+      onClick={() => changeLang("en")}
+      className="lang-option"
+      style={{ display: "flex", alignItems: "center" }}
+    >
+      <img
+        src="/americanFlag.svg"
+        alt="US Flag"
+        style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
+      />
+      English
+    </button>
+    <button
+      onClick={() => changeLang("it")}
+      className="lang-option"
+      style={{ display: "flex", alignItems: "center" }}
+    >
+      <img
+        src="/italianFlag.svg"
+        alt="IT Flag"
+        style={{ width: 20, height: 20, marginRight: 8, verticalAlign: "middle" }}
+      />
+      Italiano
+    </button>
               </div>
             )}
           </div>
