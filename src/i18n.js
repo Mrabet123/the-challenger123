@@ -17,7 +17,8 @@ i18n
       it: { translation: translationIT },
     },
     // initial language will be detected
-    fallbackLng: "en",
+    fallbackLng: "it", // <-- set Italian as fallback
+    lng: "it",         // <-- set Italian as initial language
     interpolation: { escapeValue: false },
     detection: {
       // order and from where user language should be detected

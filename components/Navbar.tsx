@@ -73,7 +73,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection("how-it-works")}>
             {t("navbar.howItWorks")}
           </button>
-          <button onClick={() => scrollToSection("for-gen-z")}>
+          <button onClick={() => scrollToSection("why-join-us")}>
             {t("navbar.whyJoinUs") || "Why Join Us"}
           </button>
           <button onClick={() => router.push("/about")}>

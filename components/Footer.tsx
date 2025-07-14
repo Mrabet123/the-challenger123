@@ -68,13 +68,13 @@ const Footer = () => {
           </div>
           <div className="footer-socials">
             <a
-              href="https://linkedin.com"
+              href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="Facebook"
               className="footer-social-icon"
             >
-              <FaLinkedin />
+              <FaFacebook />
             </a>
             <a
               href="https://instagram.com"
@@ -93,6 +93,15 @@ const Footer = () => {
               className="footer-social-icon"
             >
               <FaTiktok />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="footer-social-icon"
+            >
+              <FaLinkedin />
             </a>
           </div>
         </div>
