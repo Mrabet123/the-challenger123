@@ -158,28 +158,32 @@ const Navbar = () => {
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
           <div className="mobile-menu-overlay">
-            <button
-              className="close-mobile-menu"
-              aria-label="Close menu"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              &times;
-            </button>
-            <button onClick={() => scrollToSection("how-it-works")}>{t("navbar.howItWorks")}</button>
-            <button onClick={() => scrollToSection("for-gen-z")}>{t("navbar.whyJoinUs") || "Why Join Us"}</button>
-            <button onClick={() => router.push("/about")}>{t("navbar.aboutUs")}</button>
-            <button onClick={() => scrollToSection("footer")}>{t("navbar.contact")}</button>
-            <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+            <div className="mobile-menu-header">
               <button
-                className="waitlist-btn"
-                style={{ marginTop: "1.5rem" }}
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  router.push("/waitlist");
-                }}
+                className="close-mobile-menu"
+                aria-label="Close menu"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t("navbar.joinWaitlist")}
+                &times;
               </button>
+            </div>
+            <div className="mobile-menu-content">
+              <button onClick={() => scrollToSection("how-it-works")}>{t("navbar.howItWorks")}</button>
+              <button onClick={() => scrollToSection("for-gen-z")}>{t("navbar.whyJoinUs") || "Why Join Us"}</button>
+              <button onClick={() => router.push("/about")}>{t("navbar.aboutUs")}</button>
+              <button onClick={() => scrollToSection("footer")}>{t("navbar.contact")}</button>
+              <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+                <button
+                  className="waitlist-btn"
+                  style={{ marginTop: "1.5rem" }}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    router.push("/waitlist");
+                  }}
+                >
+                  {t("navbar.joinWaitlist")}
+                </button>
+              </div>
             </div>
           </div>
         )}

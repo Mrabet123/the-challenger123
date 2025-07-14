@@ -16,11 +16,21 @@
     "benefits": "Vantaggi",
     "forms": "Moduli"
   },
+  "whyJoinUs": {
+    "title": "Perché unirsi a noi come {{role}}",
+    "tabs": {
+      "genz": "Gen Z Challenger",
+      "business": "Proprietario Business",
+      "ambassador": "Ambasciatore"
+    }}
+    ,
   "buttons": {
     "joinWaitlist": "Iscriviti alla Lista d'Attesa",
     "applyVendor": "Candidati come Venditore",
     "applyAmbassador": "Candidati come Ambassador",
-    "letsGo": "Andiamo!"
+    "apply": "Candidati come",
+    "letsGo": "Andiamo!",
+    "linkedinProfile": "Profilo LinkedIn"
   },
   "modal": {
   "welcome": "Benvenuto su The Challenger!",
@@ -188,18 +198,30 @@
 "earlyAccess": {
   "title": "Assicurati il Tuo Accesso Anticipato — Posti Limitati!",
   "discount": "Fino al 50% di sconto sulla prima sfida",
-  "commission": "20% di commissione referral a vita",
+  "commission": "10% di commissione referral a vita",
   "cta": "Iscriviti ora"
 },
 "forGenZ": {
-  "title": "Per Gen Z Challenger",
-  "reasons": [
-    { "title": "Mai più FOMO", "desc": "Non perdere mai le sfide più calde nella tua città. Sii il primo a sapere, il primo a competere." },
-    { "title": "Vantarsi Digitalmente", "desc": "Condividi le tue vittorie su tutte le piattaforme. Costruisci il tuo brand personale da campione." },
-    { "title": "Connettiti & Conquista", "desc": "Incontra amanti dell'adrenalina come te. Forma squadre, fai amicizia, crea ricordi." },
-    { "title": "Vinci Premi Reali", "desc": "Contanti, gadget, esperienze e merchandising esclusivo. Ogni sfida ha premi." }
-  ]
-},
+    "title": "Per Gen Z Challenger",
+    "reasons": [
+      { 
+        "title": "Mai più FOMO", 
+        "desc": "Non perdere mai le sfide più calde nella tua città. Sii il primo a sapere, il primo a competere." 
+      },
+      { 
+        "title": "Vantarsi Digitalmente", 
+        "desc": "Condividi le tue vittorie su tutte le piattaforme. Costruisci il tuo brand personale da campione." 
+      },
+      { 
+        "title": "Connettiti & Conquista", 
+        "desc": "Incontra amanti dell'adrenalina come te. Forma squadre, fai amicizia, crea ricordi." 
+      },
+      { 
+        "title": "Vinci Premi Reali", 
+        "desc": "Contanti, gadget, esperienze e merchandising esclusivo. Ogni sfida ha premi." 
+      }
+    ]
+  },
 "forBusinesses": {
   "title": "Per Proprietari di Business",
   "reasons": [
@@ -222,27 +244,160 @@
   "heroTitle": "Il team Gen Z dietro The Challenger",
   "heroText":"ChallenZee è una piattaforma basata su sfide progettata per la Gen Z da parte della Gen Z. Connettiamo le persone attraverso esperienze divertenti, sociali e competitive ospitate in locali come bar, caffè, terrazze e spazi culturali." ,
   "missionTitle": "La nostra missione",
-"missionPoints": {
-      "makeFunMeaningful":   { "emoji": "🎉", "text": "Rendere il divertimento significativo" },
-      "sparkCompetition":    { "emoji": "🤝", "text": "Accendere una competizione amichevole" },
-      "enableConnections":   { "emoji": "🔗", "text": "Favorire connessioni reali" },
-      "rewardCreativity":    { "emoji": "💡", "text": "Premiare creatività e impegno" },
-      "supportBusinesses":   { "emoji": "🏘️", "text": "Supportare le imprese locali" }
-    },
-  "missionText": "Dare ai giovani il potere di trasformare ogni esperienza in una sfida da condividere, favorendo creatività, connessione e crescita in tutto il mondo.",
+   "mission1Emoji": "🎉",
+   "mission1Text": "Dare significato al divertimento",
+   "mission2Emoji": "🤝",
+   "mission2Text": "Accendere una competizione amichevole",
+   "mission3Emoji": "💬",
+   "mission3Text": "Favorire connessioni reali",
+   "mission4Emoji": "🏆",
+   "mission4Text": "Premiare creatività e impegno",
+   "mission5Emoji": "🏪",
+   "mission5Text": "Sostenere le attività locali",
   "valuesTitle": "I nostri valori",
-  "valuesPoints": {
-    "discover":    { "icon": "🧭", "title": "Scoprire",     "desc": "Nuove esperienze" },
-    "challenge":   { "icon": "🏆", "title": "Sfida",        "desc": "Se stessi e gli altri" },
-    "connect":     { "icon": "🔗", "title": "Connettersi",  "desc": "Con la scena locale" },
-    "getRewarded": { "icon": "🎁", "title": "Ricevi Ricompense", "desc": "Per la partecipazione" },
-    "earn":        { "icon": "💰", "title": "Guadagna",      "desc": "Promuovendo & ospitando esperienze" },
-    "build":       { "icon": "👤", "title": "Costruisci",   "desc": "Un personal brand che conta" }
-  },
+   "value1Title": "Scopri",
+   "value1Subtitle": "Nuove esperienze",
+   "value2Title": "Sfida",
+   "value2Subtitle": "Se stessi e gli altri",
+   "value3Title": "Connettiti",
+   "value3Subtitle": "Con scene locali",
+   "value4Title": "Ricevi Ricompense",
+   "value4Subtitle": "Per la partecipazione",
+   "value5Title": "Guadagna",
+   "value5Subtitle": "Promuovendo e ospitando esperienze",
+   "value6Title": "Costruisci",
+   "value6Subtitle": "Un marchio personale che conta",
   "teamTitle": "Il Team",
   "fullTeamBtn": "Scopri tutto il team",
-    "heroQuote": "“ Le grandi cose sono fatte da una serie di piccole cose messe insieme. ”"
-
+    "heroQuote": "“ Non limitarti a partecipare! Sei qui per prendere il controllo!”",
+    "teamCategories": [
+      {
+        "title": "Leadership e Consiglio Consultivo",
+        "members": [
+          {
+            "name": "Ghassen Mansouri",
+            "role": "Fondatore, CEO & Responsabile Sviluppo Mercato",
+            "location": "Con sede a Lecco, Italia",
+            "description": "Fondatore e stratega visionario dietro ChallenZee. Ghassen è la forza trainante che ha concettualizzato la missione, la visione del prodotto e la roadmap di lancio. Esperto consolidato nella creazione di rapporti, sviluppo aziendale e penetrazione del mercato, porta un istinto esecutivo acuto, versatilità multilingue e una profonda passione per connettere i giovani con esperienze sociali dinamiche. Il suo background trasversale nel SaaS, nel turismo di lusso e nelle vendite promozionali plasma la strategia agile e orientata alla crescita di ChallenZee."
+          ,"linkedin": "https://www.linkedin.com/in/ghassen-mansouri-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+          },
+          {
+            "name": "Nabil Mansouri",
+            "role": "Co-Fondatore & Consigliere Strategico",
+            "location": "Con sede a Montreal, Canada",
+            "description": "Dirigente visionario con oltre 15 anni di esperienza nella scalabilità di iniziative digitali nei settori edilizia, trasporti, healthtech e telecomunicazioni. Esperto in partnership strategiche, P&L e crescita internazionale.",
+            "linkedin": "https://www.linkedin.com/in/nab-mans?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+          },
+          {
+            "name": "Kardo Sharifi",
+            "role": "Consigliere Prodotto & Crescita",
+            "location": "Con sede in Europa",
+            "description": "Mentore di oltre 100 startup. Specialista in product-market fit, delivery agile e scalabilità di team cross-funzionali. Supporta la roadmap e l'efficacia operativa di ChallenZee."
+          ,"linkedin": "https://www.linkedin.com/in/kardo-sharifi-9044981a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+          },
+          {
+            "name": "Magda Fontanella",
+            "role": "Responsabile Ricerca & Insight Gen Z",
+            "location": "Lecco, Italia",
+            "description": "Con un background in filosofia e psicologia, Magda porta una lente socialmente radicata a ChallenZee. Il suo lavoro nelle politiche giovanili e nella divulgazione culturale garantisce che creiamo esperienze di sfida che risuonano con il bisogno di scopo, autoespressione e appartenenza della Gen Z."
+          ,"linkedin": "https://www.linkedin.com/in/magda-fontanella-a50a0188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "}
+        ]
+      },
+      {
+        "title": "Squadra Marketing, Creatività & Brand",
+        "members": [
+          {
+            "name": "Rami Ben Ahmed",
+            "role": "Product Manager & Technical Lead",
+            "location": "Con sede in Tunisia",
+            "description": "Supervisiona lo sviluppo e l'implementazione del prodotto, lavorando a stretto contatto con l'ingegneria per modellare un'esperienza piattaforma centrata sull'utente."
+          },
+          {
+            "name": "Yassine Mrabet",
+            "role": "Ingegnere Software Full-Stack",
+            "location": "Con sede in Tunisia",
+            "description": "Parte del team di sviluppo del prodotto principale. Si concentra sulla sinergia front-end/back-end per l'MVP scalabile di ChallenZee."
+          },
+          {
+            "name": "Chams Eddine Abderrahim",
+            "role": "DevOps & Cloud Architect",
+            "location": "Con sede in Tunisia",
+            "description": "Garantisce infrastruttura cloud, prestazioni e stabilità man mano che la piattaforma scala. Supporta l'automazione e i flussi di lavoro DevOps."
+          },
+          {
+            "name": "Mohamed Achref Mannai",
+            "role": "Specialista Storage & Infrastruttura",
+            "location": "Con sede a Parigi, Francia",
+            "description": "Ingegnere di supporto storage con competenze in ambienti SAN, sistemi di backup e architettura VMware, lavora insieme al team di sviluppo per garantire che l'infrastruttura della piattaforma ChallenZee sia performante, sicura e scalabile"
+          }
+        ]
+      },
+      {
+        "title": "Team Marketing, Creatività & Brand",
+        "members": [
+          {
+            "name": "Amanda Martinez",
+            "role": "Brand Identity & Graphic Designer",
+            "location": "Con sede a Forlì, Italia",
+            "description": "Specialista nella creazione di visual di marca vivaci ed esperienze digitali. Modella l'aspetto e la sensazione di ChallenZee con una profonda comprensione dell'appeal Gen Z."
+          },
+          {
+            "name": "Alessia Nikolli",
+            "role": "Specialista Marketing & Contenuti",
+            "location": "Con sede a Udine, Italia",
+            "description": "Laureata in marketing multilingue con esperienza pratica in campagne e ricerca. Coordina la creazione di contenuti, comunicazioni e messaggi di impatto sociale."
+          },
+          {
+            "name": "Ottavia Oddone",
+            "role": "Content Creator & Voce Comunità Gen Z",
+            "location": "Con sede a Torino, Italia",
+            "description": "Appassionata di psicologia sociale, presentatrice di eventi e creatrice di podcast. Porta storytelling autentico e insight Gen Z alla voce online del brand."
+          }
+        ]
+      },
+      {
+        "title": "Ambasciatori & Attivatori Cittadini",
+        "subtitle": "(Accesso Anticipato - Pionieri del Movimento Go-To-Market)",
+        "members": [
+          {
+            "name": "Mitri Tessera",
+            "role": "Ambasciatore Principale",
+            "location": "Milano, Italia",
+            "description": "Organizzatore di concerti e stratega digitale. Guida le attivazioni in fase iniziale di ChallenZee e la cura degli eventi di sfida a Milano."
+          },
+          {
+            "name": "Giorgia Casti",
+            "role": "Ambasciatrice Cittadina",
+            "location": "Torino, Italia",
+            "description": "Specialista di marketing e creatrice di contenuti di viaggio. Porta creatività e portata digitale agli eventi ChallenZee a Torino."
+          },
+          {
+            "name": "Maria Milagaros",
+            "role": "Ambasciatrice Cittadina",
+            "location": "Torino, Italia",
+            "description": "Addetta all'ospitalità con esperienza in vari luoghi turistici. Promuove e supporta l'esecuzione degli eventi."
+          },
+          {
+            "name": "Vito",
+            "role": "Ambasciatore Cittadino & Curatore Eventi",
+            "location": "Bologna, Italia / Argentina",
+            "description": "Promotore di feste con ampia esperienza nell'esecuzione di eventi. Esperto in attivazioni universitarie, di club e di gruppi sociali."
+          },
+          {
+            "name": "Luka Devic",
+            "role": "Ambasciatore",
+            "location": "Bologna, Italia / Montenegro",
+            "description": "Promuove il coinvolgimento giovanile e la promozione di esperienze di sfida all'interno di circoli internazionali."
+          },
+          {
+            "name": "Amin Rezazade",
+            "role": "Ambasciatore",
+            "location": "Napoli, Italia",
+            "description": "DJ e organizzatore di feste con una profonda rete nei locali notturni. Guida la cura degli eventi e la creazione dell'atmosfera."
+          }
+        ]
+      }
+    ]
 },
 "waitlist": {
   "title": "Unisciti alla lista d'attesa!",

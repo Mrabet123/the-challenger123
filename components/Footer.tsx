@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
-import { FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa6"
+import { FaLinkedin, FaInstagram, FaTiktok,FaFacebook } from "react-icons/fa6"
+import Link from "next/link"
 
 const Footer = () => {
   const { t } = useTranslation()
@@ -25,21 +26,21 @@ const Footer = () => {
               <a href="/about">{t("footer.about")}</a>
             </li>
             <li>
-              <a href="/faqs">{t("footer.faqs")}</a>
+              <Link href="/ComingSoon">{t("footer.faqs")}</Link>
             </li>
             <li>
-              <a href="/terms">{t("footer.terms")}</a>
+              <Link href="/ComingSoon">{t("footer.terms")}</Link>
             </li>
             <li>
-              <a href="/privacy">{t("footer.privacy")}</a>
+              <Link href="/ComingSoon">{t("footer.privacy")}</Link>
             </li>
           </ul>
           <ul style={{ listStyle: "none", padding: 0 }}>
             <li>
-              <a href="/contact">{t("footer.contact")}</a>
+              <Link href="/ComingSoon">{t("footer.contact")}</Link>
             </li>
             <li>
-              <a href="/partner">{t("footer.partner")}</a>
+              <Link href="/ComingSoon">{t("footer.partner")}</Link>
             </li>
             <li>
               <a href="/waitlist">{t("footer.joinWaitlist")}</a>
@@ -51,7 +52,7 @@ const Footer = () => {
             <span role="img" aria-label="email">
               📧
             </span>{" "}
-            <a href="mailto:ghassenmansouri@mail.com">ghassenmansouri@mail.com</a>
+            <a href="mailto:ghassen.mansouri@challenzee.com">ghassen.mansouri@challenzee.com</a>
           </div>
           <div style={{ marginBottom: 8 }}>
             <span role="img" aria-label="whatsapp">

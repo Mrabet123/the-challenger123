@@ -1,19 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import "../styles/globals.css"
 
 // Components
 import Navbar from "@/components/Navbar"
 import HeroCarousel from "@/components/HeroCarousel"
 import HowItWorks from "@/components/HowItWorks"
-import WhyGenZ from "@/components/WhyGenZ"
 import LifestyleBenefits from "@/components/LifestyleBenefits"
 import EarlyAccess from "@/components/EarlyAccess"
 import Forms from "@/components/Forms"
 import Footer from "@/components/Footer"
 import ThankYouModal from "@/components/ThankYouModal"
+import ForGenZ from "@/components/ForGenZ"
 import WhyJoinUs from "@/components/WhyJoinUs"
+import Brochure from "@/components/Brochure"
 export default function Page() {
   const [showModal, setShowModal] = useState(false)
   const [modalMessage, setModalMessage] = useState("")
@@ -28,7 +28,6 @@ export default function Page() {
       <Navbar />
       <HeroCarousel />
       <HowItWorks />
-      <WhyGenZ />
       <WhyJoinUs />
       <LifestyleBenefits />
       <EarlyAccess />
