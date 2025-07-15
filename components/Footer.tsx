@@ -14,7 +14,7 @@ const Footer = () => {
             style={{ maxWidth: 160, marginBottom: 8 }}
           />
           <p className="footer-brand-desc">
-            <span style={{ fontWeight: 700 }}>The Challenger – </span>
+            <span style={{ fontWeight: 700 }}>ChallenZee – </span>
             " {t("footer.brandDesc1")}
             <br />
             {t("footer.brandDesc2")} "
@@ -110,7 +110,7 @@ const Footer = () => {
         className="footer-bottom"
         style={{ marginTop: 24, fontSize: "0.95rem" }}
       >
-        © 2024 The Challenger. {t("footer.copyright")}
+        © 2024 ChallenZee. {t("footer.copyright")}
       </div>
     </footer>
   )

@@ -34,7 +34,7 @@
 
   },
   "modal": {
-  "welcome": "Welcome to The Challenger!",
+  "welcome": "Welcome to ChallenZee!",
   "successTitle": "Submission Successful!",
   "successMessage": "Thank you for joining the challenge!",
   "close": "Close"
@@ -251,7 +251,7 @@
     ]
   },
   "about": {
-    "heroTitle": "The Gen Z Team Behind The Challenger",
+    "heroTitle": "The Gen Z Team Behind ChallenZee",
     "heroText": "ChallenZee is a challenge-based platform designed for Gen Z by Gen Z. We connect people through fun, social, and competitive experiences hosted at local venues like bars, cafés, rooftops, and cultural spaces.",
     "missionTitle": "Our Mission",
    "mission1Emoji": "🎉",
@@ -304,13 +304,6 @@
             "location": "Based in Europe",
             "description": "Mentor to over 100 startups. Specialist in product-market fit, agile delivery, and cross-functional team scaling. Supports ChallenZee's roadmap and operational effectiveness.",
             "linkedin": "https://www.linkedin.com/in/kardo-sharifi-9044981a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
-          },
-          {
-            "name": "Magda Fontanella",
-            "role": "Gen Z Research & Insight Lead",
-            "location": "Lecco, Italy",
-            "description": "With a background in philosophy and psychology, Magda brings a socially grounded lens to ChallenZee. Her work in youth policy and cultural outreach ensures we create challenge experiences that resonate with Gen Z's need for purpose, self-expression, and belonging.",
-            "linkedin": "https://www.linkedin.com/in/magda-fontanella-a50a0188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
           }
         ]
       },
@@ -367,7 +360,7 @@
         ]
       },
       {
-        "title": "Ambassadors & City Activators",
+        "title": "City Ambassadors",
         "subtitle": "(Early Access - Pioneering the Go-To-Market Movement)",
         "members": [
           {
@@ -405,6 +398,12 @@
             "role": "Ambassador",
             "location": "Napoli, Italy",
             "description": "DJ and party organizer with a deep network in nightlife venues. Leads event curation and atmosphere creation."
+          },
+          {
+            "name": "Amin Ben",
+            "role": "Business Development",
+            "location": "Sacramento, USA",
+            "description": "Experienced in staff and team leadership, market expansion, and onboarding new partners, clients, and customers. Adept at driving business growth through strategic relationship-building and innovative market development initiatives."
           }
         ]
       }
@@ -414,12 +413,12 @@
   },
   "waitlist": {
     "title": "Join the Waitlist!",
-    "desc": "Be the first to access exclusive challenges and rewards. Sign up now and secure your spot in The Challenger movement.",
+    "desc": "Be the first to access exclusive challenges and rewards. Sign up now and secure your spot in ChallenZee movement.",
     "cta": "See Available Challenges & Join"
   },
   "brochure": {
     "title": "Download Our Brochure",
-    "desc": "Discover how The Challenger works and all the benefits for you. Download our PDF guide for all the details!",
+    "desc": "Discover how ChallenZee works and all the benefits for you. Download our PDF guide for all the details!",
     "button": "Download Brochure"
   }
 }

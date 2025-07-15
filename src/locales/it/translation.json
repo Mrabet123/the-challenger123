@@ -33,7 +33,7 @@
     "linkedinProfile": "Profilo LinkedIn"
   },
   "modal": {
-  "welcome": "Benvenuto su The Challenger!",
+  "welcome": "Benvenuto su ChallenZee!",
   "successTitle": "Invio riuscito!",
   "successMessage": "Grazie per esserti unito alla sfida!",
   "close": "Chiudi"
@@ -241,7 +241,7 @@
   ]
 },
 "about": {
-  "heroTitle": "Il team Gen Z dietro The Challenger",
+  "heroTitle": "Il team Gen Z dietro ChallenZee",
   "heroText":"ChallenZee è una piattaforma basata su sfide progettata per la Gen Z da parte della Gen Z. Connettiamo le persone attraverso esperienze divertenti, sociali e competitive ospitate in locali come bar, caffè, terrazze e spazi culturali." ,
   "missionTitle": "La nostra missione",
    "mission1Emoji": "🎉",
@@ -294,13 +294,7 @@
             "location": "Con sede in Europa",
             "description": "Mentore di oltre 100 startup. Specialista in product-market fit, delivery agile e scalabilità di team cross-funzionali. Supporta la roadmap e l'efficacia operativa di ChallenZee."
           ,"linkedin": "https://www.linkedin.com/in/kardo-sharifi-9044981a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
-          },
-          {
-            "name": "Magda Fontanella",
-            "role": "Responsabile Ricerca & Insight Gen Z",
-            "location": "Lecco, Italia",
-            "description": "Con un background in filosofia e psicologia, Magda porta una lente socialmente radicata a ChallenZee. Il suo lavoro nelle politiche giovanili e nella divulgazione culturale garantisce che creiamo esperienze di sfida che risuonano con il bisogno di scopo, autoespressione e appartenenza della Gen Z."
-          ,"linkedin": "https://www.linkedin.com/in/magda-fontanella-a50a0188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "}
+          }
         ]
       },
       {
@@ -356,7 +350,7 @@
         ]
       },
       {
-        "title": "Ambasciatori & Attivatori Cittadini",
+        "title": "Ambasciatori Cittadini",
         "subtitle": "(Accesso Anticipato - Pionieri del Movimento Go-To-Market)",
         "members": [
           {
@@ -394,6 +388,12 @@
             "role": "Ambasciatore",
             "location": "Napoli, Italia",
             "description": "DJ e organizzatore di feste con una profonda rete nei locali notturni. Guida la cura degli eventi e la creazione dell'atmosfera."
+          },
+          {
+            "name": "Amin Ben",
+            "role": "Business Development",
+            "location": "Sacramento, USA",
+            "description": "Esperto in leadership di staff e team, espansione di mercato e onboarding di nuovi partner, clienti e utenti. Abile nel guidare la crescita aziendale attraverso la costruzione strategica di relazioni e iniziative innovative di sviluppo del mercato."
           }
         ]
       }
@@ -401,12 +401,12 @@
 },
 "waitlist": {
   "title": "Unisciti alla lista d'attesa!",
-  "desc": "Sii tra i primi ad accedere a sfide e premi esclusivi. Iscriviti ora e assicurati il tuo posto nel movimento The Challenger.",
+  "desc": "Sii tra i primi ad accedere a sfide e premi esclusivi. Iscriviti ora e assicurati il tuo posto nel movimento ChallenZee.",
   "cta": "Vedi le sfide disponibili e unisciti"
 },
 "brochure": {
   "title": "Scarica la nostra brochure",
-  "desc": "Scopri come funziona The Challenger e tutti i vantaggi per te. Scarica la nostra guida PDF per tutti i dettagli!",
+  "desc": "Scopri come funziona ChallenZee e tutti i vantaggi per te. Scarica la nostra guida PDF per tutti i dettagli!",
   "button": "Scarica la brochure"
 }
 }

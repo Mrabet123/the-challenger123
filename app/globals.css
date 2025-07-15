@@ -1216,7 +1216,23 @@ html {
 .team-photo {
   margin-bottom: 1.2rem;
 }
+.team-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;      /* Show the whole image */
+  border: 4px solid #fc9e4f;
+  box-shadow: 0 2px 12px rgba(252,158,79,0.13);
+  background: #fff;         /* Optional: white background for letterboxing */
+}
 
+@media (max-width: 700px) {
+  .team-photo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+  }
+}
 .team-info h3 {
   font-size: 1.2rem;
   font-weight: 800;
@@ -1458,8 +1474,9 @@ html {
 .slide-image img {
   width: 100%;
   height: 450px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+    background: #fff;    /* optional: adds a white background for letterboxing */
 }
 
 .why-join-us .slide-benefits {
@@ -1581,6 +1598,10 @@ html {
   .slider-arrow {
     margin: 0 auto;              /* center the prev/next buttons */
   }
+  .slide-image img {
+    height: 300px;
+    object-fit: contain; /* ensure contain on mobile too */
+  }
 }
 .fade-image {
   opacity: 0;
@@ -1642,6 +1663,7 @@ html {
   
   .slide-image img {
     height: 250px;
+    object-fit: contain; /* ensure contain on small screens */
   }
   
   .benefit-card {

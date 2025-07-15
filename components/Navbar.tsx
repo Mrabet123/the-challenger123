@@ -169,7 +169,7 @@ const Navbar = () => {
             </div>
             <div className="mobile-menu-content">
               <button onClick={() => scrollToSection("how-it-works")}>{t("navbar.howItWorks")}</button>
-              <button onClick={() => scrollToSection("for-gen-z")}>{t("navbar.whyJoinUs") || "Why Join Us"}</button>
+              <button onClick={() => scrollToSection("why-join-us")}>{t("navbar.whyJoinUs") || "Why Join Us"}</button>
               <button onClick={() => router.push("/about")}>{t("navbar.aboutUs")}</button>
               <button onClick={() => scrollToSection("footer")}>{t("navbar.contact")}</button>
               <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>

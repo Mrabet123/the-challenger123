@@ -57,7 +57,6 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
     "Ghassen Mansouri": "/team/Ghassen Mansouri.jpg",
     "Nabil Mansouri": "/team/Nabil Mansouri.jpg",
     "Kardo Sharifi": "/team/Kardo Sharifi.jpg",
-    "Magda Fontanella": "/team/Magda Fontanella.jpg",
      "Rami Ben Ahmed": "/team/Rami Ben Ahmed.jpg",
     "Yassine Mrabet": "/team/yassine.jpg",
     // "Chams Eddine Abderrahim": "/team/chams.jpg",
@@ -71,6 +70,7 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
     "Luka Devic": "/team/Luka Devic.jpg",
     "Amin Rezazade": "/team/Amin Rezazad.jpg",
     "Mohamed Achref Mannai":"/team/Ashref Manai.jpg",
+  "Amin Ben": "/team/Amin Ben.jpg",
 
   };
   return (
@@ -287,6 +287,7 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
                       className="team-member-card"
                       key={`${catIndex}-${idx}`}
                       onMouseEnter={() => setHoveredMember(member)}
+                      onMouseLeave={() => setHoveredMember(null)} // <-- add this line
                       style={{
                         background: "#fff",
                         borderRadius: "1.5rem",
@@ -316,7 +317,7 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
                           height={120}
                           style={{
                             borderRadius: "50%",
-                            objectFit: "cover",
+                            objectFit: "contain",
                             border: "4px solid #fc9e4f",
                             boxShadow: "0 2px 12px rgba(252,158,79,0.13)"
                           }}
@@ -394,7 +395,7 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
                   height={100}
                   style={{
                     borderRadius: "50%",
-                    objectFit: "cover",
+                    objectFit: "contain",
                     border: "3px solid #fc9e4f"
                   }}
                 />
