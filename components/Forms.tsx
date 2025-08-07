@@ -4,8 +4,7 @@ import React, { useState, useEffect, FormEvent } from "react"
 import { useTranslation } from "react-i18next"
 
 const SHEETS_WEBHOOK_URL =
-  "https://script.google.com/macros/s/AKfycbxH3fx6sFH8PDD-gQTpSUNsy0qkvL8h6F7z9LB0tRk-HwWs0gtuHBvT4vkAQpYJDthHEg/exec"
-
+"https://script.google.com/macros/s/AKfycbwUJDkdpy8QOu7o7B80F8YXD49MC42lyVRV_3e2l7OB_mMmCJqrXtS6_nnBxEwJTKA8/exec"
 interface FormsProps {
   onFormSubmit: (formType: string) => void
 }
@@ -370,54 +369,100 @@ const Forms: React.FC<FormsProps> = ({ onFormSubmit }) => {
                   <input
                     name="Phone"
                     type="tel"
-                    placeholder={t("forms.ambassador.phone")}
+                    placeholder={t("forms.ambassador.watsapp")}
                     required
                   />
                   <select name="AgeRange" required>
                     <option value="">{t("forms.ambassador.age")}</option>
-                    <option value="18-22">18-22</option>
-                    <option value="23-26">23-26</option>
-                    <option value="27-30">27-30</option>
-                    <option value="31-40">31-40</option>  // Added new range
+                    <option value="18-24">18-24</option>
+                    <option value="25-35">25-35</option>
+                    <option value="35+">35+</option>
                   </select>
                 </div>
-                <input
-                  name="Location"
-                  type="text"
-                  placeholder={t("forms.ambassador.location")}
-                  required
-                />
+                {/* NEW FIELDS BELOW */}
+                <div className="form-row"style={{ gridTemplateColumns: "1fr" }}>
+                  <select name="ProfileType" required>
+                    <option value="">{t("forms.ambassador.profileType")}</option>
+                    <option value="event_organiser">{t("forms.ambassador.profileType_event")}</option>
+                    <option value="content_creator">{t("forms.ambassador.profileType_content")}</option>
+                    <option value="influencer">{t("forms.ambassador.profileType_influencer")}</option>
+                    <option value="student_access">{t("forms.ambassador.profileType_student")}</option>
+                    <option value="staff_venue">{t("forms.ambassador.profileType_staff")}</option>
+                    <option value="tourism_animator">{t("forms.ambassador.profileType_tourism")}</option>
+                    <option value="enthusiast">{t("forms.ambassador.profileType_enthusiast")}</option>
+                    <option value="other">{t("forms.ambassador.profileType_other")}</option>
+                  </select>
+                </div>
+                <div className="form-row">
+                  <label className="form-label" style={{ gridColumn: "1 / -1", marginBottom: 0 }}>
+                    {t("forms.ambassador.venueAccess")}
+                  </label>
+                  <div style={{ display: "flex", alignItems: "center", gap: "2rem", gridColumn: "1 / -1", marginBottom: "1rem" }}>
+                    <label className="checkbox-label" style={{ margin: 0 }}>
+                      <input
+                        type="radio"
+                        name="VenueAccess"
+                        value="yes"
+                        required
+                      />
+                      {t("forms.ambassador.yes")}
+                    </label>
+                    <label className="checkbox-label" style={{ margin: 0 }}>
+                      <input
+                        type="radio"
+                        name="VenueAccess"
+                        value="no"
+                        required
+                      />
+                      {t("forms.ambassador.no")}
+                    </label>
+                  </div>
+                </div>
                 <div className="form-row">
                   <input
                     name="LinkedIn"
-                    type="url"
+                    type="text"
                     placeholder={t("forms.ambassador.linkedin")}
                   />
                   <input
                     name="Instagram"
-                    type="url"
+                    type="text"
                     placeholder={t("forms.ambassador.instagram")}
                   />
                 </div>
-                <input
-                  name="TikTok"
-                  type="url"
-                  placeholder={t("forms.ambassador.tiktok")}
-                />
-                <textarea
-                  name="PromotionPlan"
-                  placeholder={t("forms.ambassador.promote")}
-                  required
-                />
-                <textarea
-                  name="Experience"
-                  placeholder={t("forms.ambassador.experience")}
-                />
-                <input
-                  name="Resources"
-                  type="text"
-                  placeholder={t("forms.ambassador.resources")}
-                />
+                <div className="form-row">
+                  <input
+                    name="TikTok"
+                    type="text"
+                    placeholder={t("forms.ambassador.tiktok")}
+                  />
+                </div>
+                <div className="form-row">
+                  <label className="form-label" style={{ gridColumn: "1 / -1", marginBottom: 0 }}>
+                    {t("forms.ambassador.comfortableStructure")}
+                  </label>
+                  <div style={{ display: "flex", alignItems: "center", gap: "2rem", gridColumn: "1 / -1", marginBottom: "1rem" }}>
+                    <label className="checkbox-label" style={{ margin: 0 }}>
+                      <input
+                        type="radio"
+                        name="ComfortableStructure"
+                        value="yes"
+                        required
+                      />
+                      {t("forms.ambassador.yes")}
+                    </label>
+                    <label className="checkbox-label" style={{ margin: 0 }}>
+                      <input
+                        type="radio"
+                        name="ComfortableStructure"
+                        value="no"
+                        required
+                      />
+                      {t("forms.ambassador.no")}
+                    </label>
+                  </div>
+                </div>
+                {/* END NEW FIELDS */}
                 <label className="checkbox-label">
                   <input
                     name="AgreeCommission"

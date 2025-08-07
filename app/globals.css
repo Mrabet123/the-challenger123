@@ -1357,6 +1357,67 @@ html {
   z-index: 3000;
   padding: 1rem;
 }
+/* Ambassador headline, all screens */
+.hero-slide.ambassador .hero-headline {
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.2;
+  margin: 0 1rem;
+  /* now scales between 2rem and 3.5rem */
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+/* Extra boost on large desktops */
+@media (min-width: 1200px) {
+  .hero-slide.ambassador .hero-headline {
+    font-size: 3.5rem;  /* or even 4rem if you like */
+    margin: 0 2rem;
+  }
+}
+
+/* Hero players cards */
+.about-hero .hero-players {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.hero-players .player-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-players .player-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.player-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.player-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+
+.player-text {
+  font-size: 0.95rem;
+  color: var(--white);
+  opacity: 0.9;
+  line-height: 1.4;
+}
 
 .coming-soon-card {
   background: var(--white);

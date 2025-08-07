@@ -81,17 +81,49 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
         <section className="about-hero" style={{
           background: "linear-gradient(120deg, #954de6 0%, #fc9e4f 100%)",
           color: "#fff",
-          padding: "4rem 0 2.5rem 0",
+          padding: "2.2rem 0 2.5rem 0",
           textAlign: "center",
           position: "relative"
         }}>
           <div className="container">
-            <h1 className="about-title" style={{ fontSize: "2.7rem", fontWeight: 900, marginBottom: "1.5rem", letterSpacing: "0.5px" }}>
-              {t("about.heroTitle")}
-            </h1>
-            <p className="about-intro" style={{ fontSize: "1.25rem", maxWidth: 700, margin: "0 auto", opacity: 0.95, fontWeight: 500 }}>
-              {t("about.heroText")}
+            <p
+              className="about-intro"
+              style={{ fontSize: "1.45rem", maxWidth: 700, margin: "0 auto 2rem auto", opacity: 0.95, fontWeight: 650 }}
+            >
+              {t('about.heroText')}
             </p>
+            {/* New players cards container */}
+<div className="hero-players">
+  <div className="player-card">
+    <span className="player-emoji">🎯</span>
+    <h4 className="player-title">{t('about.heroBulletChallengers').split(':')[0]}</h4>
+    <p className="player-text">{t('about.heroBulletChallengers').split(':')[1].trim()}</p>
+  </div>
+  <div className="player-card">
+    <span className="player-emoji">🚀</span>
+    <h4 className="player-title">{t('about.heroBulletAmbassadors').split(':')[0]}</h4>
+    <p className="player-text">{t('about.heroBulletAmbassadors').split(':')[1].trim()}</p>
+  </div>
+  <div className="player-card">
+    <span className="player-emoji">🏢</span>
+    <h4 className="player-title">{t('about.heroBulletVenues').split(':')[0]}</h4>
+    <p className="player-text">{t('about.heroBulletVenues').split(':')[1].trim()}</p>
+  </div>
+</div>
+ {/* Network statement above slogan */}
+ <p
+   className="hero-network"
+   style={{
+     fontSize: "1.1rem",
+     maxWidth: 600,
+     margin: "1.5rem auto",
+     fontWeight: 600,
+     opacity: 0.9,
+     color: "#fff",
+   }}
+ >
+   {t("about.heroNetwork")}
+ </p>
             <div style={{
               margin: "2.5rem auto 0 auto",
               maxWidth: 600,

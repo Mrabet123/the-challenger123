@@ -22,14 +22,14 @@ const HowItWorks = () => {
       { icon: "🏆", title: t("howItWorks.challenger.step3Title"), description: t("howItWorks.challenger.step3Desc") },
     ],
     vendor: [
-      { icon: "📢", title: t("howItWorks.vendor.step1Title"), description: t("howItWorks.vendor.step1Desc") },
-      { icon: "🤝", title: t("howItWorks.vendor.step2Title"), description: t("howItWorks.vendor.step2Desc") },
-      { icon: "💰", title: t("howItWorks.vendor.step3Title"), description: t("howItWorks.vendor.step3Desc") },
+      { icon: "🏠", title: t("howItWorks.vendor.step1Title"), description: t("howItWorks.vendor.step1Desc") },
+      { icon: "💰", title: t("howItWorks.vendor.step2Title"), description: t("howItWorks.vendor.step2Desc") },
+      { icon: "📣", title: t("howItWorks.vendor.step3Title"), description: t("howItWorks.vendor.step3Desc") },
     ],
     ambassador: [
       { icon: "📲", title: t("howItWorks.ambassador.step1Title"), description: t("howItWorks.ambassador.step1Desc") },
-      { icon: "🚀", title: t("howItWorks.ambassador.step2Title"), description: t("howItWorks.ambassador.step2Desc") },
-      { icon: "🏅", title: t("howItWorks.ambassador.step3Title"), description: t("howItWorks.ambassador.step3Desc") },
+      { icon: "🏠", title: t("howItWorks.ambassador.step2Title"), description: t("howItWorks.ambassador.step2Desc") },
+      { icon: "🚀", title: t("howItWorks.ambassador.step3Title"), description: t("howItWorks.ambassador.step3Desc") },
     ],
   };
 

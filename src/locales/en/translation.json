@@ -54,20 +54,20 @@
     "step3Desc": "Claim your prizes and share your victory. Build your reputation as a champion."
   },
   "vendor": {
-    "step1Title": "List Your Venue",
-    "step1Desc": "Register your business and set up your challenge offerings in minutes.",
-    "step2Title": "Host & Engage",
-    "step2Desc": "Welcome Gen Z challengers, host epic events, and boost your brand visibility.",
-    "step3Title": "Grow & Earn",
-    "step3Desc": "Attract new customers, fill your venue, and earn extra revenue over bookings made + customers spendings."
+    "step1Title": "Approve Permission",
+    "step1Desc": "Let our ambassador host a 1-hour challenge event at your venue.",
+    "step2Title": "Agree on Commission",
+    "step2Desc": "Negotiate your cut on bookings. Keep all in-venue spending.",
+    "step3Title": "Get Exposure & Bookings",
+    "step3Desc": "Paying customers, and boost your visibility."
   },
   "ambassador": {
-    "step1Title": "Apply & Get Approved",
-    "step1Desc": "Submit your application and join our exclusive ambassador community.",
-    "step2Title": "Promote & Inspire",
-    "step2Desc": "Share challenges, inspire your audience, and help us grow the movement.",
-    "step3Title": "Earn & Shine",
-    "step3Desc": "Earn rewards, gain recognition, and unlock special perks as a top ambassador."
+    "step1Title": "Secure a Venue",
+    "step1Desc": "Get permission from a local venue to host events.",
+    "step2Title": "Set Your Price & Format",
+    "step2Desc": "Choose the price, structure, and prize.",
+    "step3Title": "Host & Earn",
+    "step3Desc": "Run events, keep up to 80% of  revenue."
   }
 },
   "heroCarousel": {
@@ -77,8 +77,8 @@
     "vendorHeadline": "Turn ur business into a gold mine. Host unforgettable challenges",
     "vendorSubhead": "Apply now with zero upfront cost.",
     "vendorCTA": "Become a Vendor",
-    "ambassadorHeadline": "Are you an influencer? Inspire & Sponsor epic Challenges and earn with us.",
-    "ambassadorSubhead": "Are you an influencer? Partner with us to sponsor and promote epic challenges.",
+    "ambassadorHeadline": "Want to host challenge events in your own venue? Set your price, earn more, and grow your ChallenZee brand locally!",
+    "ambassadorSubhead": "We have your back: promoting your events to millions, ticketing & booking system. You run the show.",
     "ambassadorCTA": "Join as Ambassador"
   },
   "whyGenZ": {
@@ -164,30 +164,41 @@
       "submit": "Submit",
       "submitting": "Submitting..."
     },
-    "ambassador": {
-      "title": "Ambassador Application",
-      "name": "Full Name",
-      "email": "Email",
-      "phone": "Phone",
-      "age": "Age Range",
-      "age_18_22": "18-22",
-      "age_23_26": "23-26",
-      "age_27_30": "27-30",
-      "location": "Location",
-      "linkedin": "LinkedIn Profile (optional)",
-      "instagram": "Instagram Profile (optional)",
-      "tiktok": "TikTok Profile (optional)",
-      "promote": "How will you promote us?",
-      "experience": "Relevant Experience (optional)",
-      "resources": "Resources/Network (optional)",
-      "agree": "I agree to the ambassador commission terms.",
-      "submit": "Submit",
-      "submitting": "Submitting..."
-    }
+        "ambassador": {
+          "title": "Ambassador Application",
+          "name": "Full Name",
+          "email": "Email",
+          "watsapp": "WhatsApp",
+          "age": "Age Range",
+          "profileType": "Which of these best describe you?",
+          "profileType_event": "Event/Party Organiser",
+          "profileType_content": "Content Creator",
+          "profileType_influencer": "Influencer",
+          "profileType_student": "Student with access to business venues",
+          "profileType_staff": "Staff at bar, club, lounge, etc.",
+          "profileType_tourism": "Tourism or activity animator",
+          "profileType_enthusiast": "Enthusiast who wants to run challenge events in my city",
+          "profileType_other": "Other",
+          "venueAccess": "Do you already have access to venues or can get one?",
+          "yes": "Yes",
+          "no": "No",
+          "socialProfile": "Social media profile (LinkedIn, FB, Instagram, TikTok...)",
+          "comfortableStructure": "Are you comfortable following our challenge events structure?",
+          "location": "Current city/country",
+          "linkedin": "LinkedIn Profile (optional)",
+          "instagram": "Instagram Profile (optional)",
+          "tiktok": "TikTok Profile (optional)",
+          "promote": "How will you promote us?",
+          "experience": "Relevant Experience (optional)",
+          "resources": "Resources/Network (optional)",
+          "agree": "I agree to the ambassador commission terms.",
+          "submit": "Submit",
+          "submitting": "Submitting..."
+        }
   },
   "footer": {
-    "brandDesc1": " A global platform making every experience",
-    "brandDesc2": "a challenge worth sharing.",
+    "brandDesc1": "Where challenges build legends,",
+    "brandDesc2": "brands, and booming venues.",
     "about": "About",
     "faqs": "FAQs",
     "terms": "Terms of Use",
@@ -244,16 +255,21 @@
   "forAmbassadors": {
     "title": "For Ambassadors",
     "reasons": [
-      { "title": "Inspire Your Audience", "desc": "Share challenges and motivate your followers to join the movement." },
-      { "title": "Grow Your Influence", "desc": "Partner with us and expand your reach as a top ambassador." },
-      { "title": "Earn Rewards", "desc": "Unlock exclusive perks, commissions, and recognition for your efforts." },
-      { "title": "Be a Leader", "desc": "Help shape the future of challenges and inspire the next generation." }
+      { "title": "Run Challenge Events", "desc": "Host  your own shows. Set your price." },
+      { "title": "Earn Big", "desc": "Get paid per booking. Unlock. Grow city by city." },
+      { "title": "Build Your Brand", "desc": "Get featured. Climb ranks. Become a City Captain." },
+      { "title": "Full Support", "desc": "Training, kits,  nonstop promoting." }
     ]
   },
   "about": {
-    "heroTitle": "The Gen Z Team Behind ChallenZee",
-    "heroText": "ChallenZee is a challenge-based platform designed for Gen Z by Gen Z. We connect people through fun, social, and competitive experiences hosted at local venues like bars, cafés, rooftops, and cultural spaces.",
-    "missionTitle": "Our Mission",
+
+    "heroText": "ChallenZee is a next-gen platform that turns real-world venues into epic arenas of fun, competition, and community.",
+  "heroPlayersIntro": "We connect three key players in the challenge movement:",
+  "heroBulletChallengers": " Challengers: Join unique, gamified events to compete, win prizes, and climb the city leaderboard. Become your city’s ChallenZee King.",
+  "heroBulletAmbassadors": " Ambassadors: Curate and host your own challenge events. Set your price, get full support, and build your brand as a local entertainment leader.",
+  "heroBulletVenues": " Business Venues: Open your doors to unforgettable experiences. We bring the events, people, and visibility — you earn from bookings and spending.",
+  "heroNetwork": "Together, we’re building a global network of challenge-driven events where everyone levels up",
+  "missionTitle": "Our Mission",
    "mission1Emoji": "🎉",
    "mission1Text": "Make fun meaningful",
    "mission2Emoji": "🤝",

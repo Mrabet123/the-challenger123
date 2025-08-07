@@ -53,20 +53,20 @@
     "step3Desc": "Ritira i tuoi premi e condividi la tua vittoria. Costruisci la tua reputazione da campione."
   },
   "vendor": {
-    "step1Title": "Registra il Tuo Locale",
-    "step1Desc": "Registra la tua attività e configura le tue sfide in pochi minuti.",
-    "step2Title": "Ospita & Coinvolgi",
-    "step2Desc": "Accogli i challenger Gen Z, organizza eventi epici e aumenta la visibilità del tuo brand.",
-    "step3Title": "Cresci & Guadagna",
-    "step3Desc": "Attira nuovi clienti, riempi il tuo locale e guadagna entrate extra da ogni prenotazione e spesa dei clienti."
+    "step1Title": "Approva il Permesso",
+    "step1Desc": "Consenti al nostro ambasciatore di ospitare un evento di sfida di 1 ora nel tuo locale.",
+    "step2Title": "Accetta la Commissione",
+    "step2Desc": "Negozia la tua percentuale sulle prenotazioni. Mantieni tutte le spese in loco.",
+    "step3Title": "Ottieni Visibilità & Prenotazioni",
+    "step3Desc": "Clienti paganti e aumenta la tua visibilità."
   },
   "ambassador": {
-    "step1Title": "Candidati & Ottieni l’Accesso",
-    "step1Desc": "Invia la tua candidatura ed entra nella nostra community esclusiva di ambassador.",
-    "step2Title": "Promuovi & Ispira",
-    "step2Desc": "Condividi le sfide, ispira il tuo pubblico e aiutaci a far crescere il movimento.",
-    "step3Title": "Guadagna & Brilla",
-    "step3Desc": "Ottieni ricompense, riconoscimenti e vantaggi esclusivi come top ambassador."
+    "step1Title": "Candidati e Lancia",
+    "step1Desc": "Una volta approvato, otterrai accesso immediato al nostro Toolkit per Eventi di Sfida.",
+    "step2Title": "Ottieni un Locale",
+    "step2Desc": "Ottieni il permesso da un locale per ospitare eventi.",
+    "step3Title": "Ospita e Guadagna",
+    "step3Desc": "Gestisci eventi, mantieni fino all 80% delle entrate."
   }
 },
 "heroCarousel": {
@@ -76,7 +76,8 @@
   "vendorHeadline": "Trasforma la tua attività in una miniera d’oro. Organizza sfide indimenticabili",
   "vendorSubhead": "Candidati ora senza costi iniziali.",
   "vendorCTA": "Diventa un Venditore",
-"ambassadorHeadline": "Sei un influencer? Ispira e sponsorizza sfide epiche e guadagna con noi.",  "ambassadorSubhead": "Sei un influencer? Collabora con noi per sponsorizzare e promuovere sfide epiche.",
+"ambassadorHeadline": "Vuoi ospitare eventi di sfida nel tuo locale? Imposta il tuo prezzo, guadagna di più e fai crescere il tuo brand ChallenZee localmente!", 
+ "ambassadorSubhead": "Ti supportiamo: promuovendo i tuoi eventi a milioni, sistema di biglietteria e prenotazione. Tu gestisci lo spettacolo.",
   "ambassadorCTA": "Unisciti come Ambassador"
 },
 "whyGenZ": {
@@ -162,30 +163,42 @@
     "submit": "Invia",
     "submitting": "Invio in corso..."
   },
-  "ambassador": {
-    "title": "Candidatura Ambasciatore",
-    "name": "Nome completo",
-    "email": "Email",
-    "phone": "Telefono",
-    "age": "Fascia d'età",
-    "age_18_22": "18-22",
-    "age_23_26": "23-26",
-    "age_27_30": "27-30",
-    "location": "Località",
-    "linkedin": "Profilo LinkedIn (opzionale)",
-    "instagram": "Profilo Instagram (opzionale)",
-    "tiktok": "Profilo TikTok (opzionale)",
-    "promote": "Come ci promuoverai?",
-    "experience": "Esperienza rilevante (opzionale)",
-    "resources": "Risorse/Network (opzionale)",
-    "agree": "Accetto i termini della commissione ambasciatore.",
-    "submit": "Invia",
-    "submitting": "Invio in corso..."
-  }
+      "ambassador": {
+        "title": "Candidatura Ambasciatore",
+        "name": "Nome completo",
+        "email": "Email",
+        "watsapp": "WhatsApp",
+        "age": "Fascia d'età",
+        "profileType": "Quale di questi ti descrive meglio?",
+        "profileType_event": "Organizzatore di eventi/feste",
+        "profileType_content": "Content creator",
+        "profileType_influencer": "Influencer",
+        "profileType_student": "Studente con accesso a locali business",
+        "profileType_staff": "Staff presso bar, club, lounge, ecc.",
+        "profileType_tourism": "Animatore turistico o attività",
+        "profileType_enthusiast": "Appassionato che vuole organizzare challenge nella mia città",
+        "profileType_other": "Altro",
+        "venueAccess": "Hai già accesso a locali o puoi ottenerlo?",
+        "yes": "Sì",
+        "no": "No",
+        "socialProfile": "Profilo social media (LinkedIn, FB, Instagram, TikTok...)",
+        "comfortableStructure": "Sei a tuo agio nel seguire la struttura dei nostri eventi challenge?",
+        "location": "Città/paese attuale",
+        "linkedin": "Profilo LinkedIn (opzionale)",
+        "instagram": "Profilo Instagram (opzionale)",
+        "tiktok": "Profilo TikTok (opzionale)",
+        "promote": "Come ci promuoverai?",
+        "experience": "Esperienza rilevante (opzionale)",
+        "resources": "Risorse/Network (opzionale)",
+        "agree": "Accetto i termini della commissione ambasciatore.",
+        "submit": "Invia",
+        "submitting": "Invio in corso..."
+      }
+
 },
 "footer": {
-  "brandDesc1": " Una piattaforma globale che rende ogni esperienza",
-  "brandDesc2": "una sfida da condividere.",
+  "brandDesc1": "Dove le sfide costruiscono leggende,",
+  "brandDesc2": "brand e locali in crescita.",
   "about": "Chi Siamo",
   "faqs": "Domande Frequenti",
   "terms": "Termini di Utilizzo",
@@ -234,15 +247,20 @@
 "forAmbassadors": {
   "title": "Per Ambassador",
   "reasons": [
-    { "title": "Ispira la Tua Community", "desc": "Condividi le sfide e motiva i tuoi follower a unirsi al movimento." },
-    { "title": "Fai Crescere la Tua Influenza", "desc": "Collabora con noi ed espandi la tua presenza come top ambassador." },
-    { "title": "Ottieni Ricompense", "desc": "Sblocca vantaggi esclusivi, commissioni e riconoscimenti per il tuo impegno." },
-    { "title": "Sii un Leader", "desc": "Aiuta a plasmare il futuro delle sfide e ispira la prossima generazione." }
+    { "title": "Gestisci Eventi di Sfida", "desc": "Ospita i tuoi eventi. Imposta il tuo prezzo." },
+    { "title": "Guadagna alla Grande", "desc": "Ricevi un pagamento per ogni prenotazione. Sblocca. Cresci città dopo città." },
+    { "title": "Costruisci il Tuo Brand", "desc": "Fatti notare. Scala le classifiche. Diventa un City Captain." },
+    { "title": "Supporto Completo", "desc": "Formazione, kit e promozione continua." }
   ]
 },
 "about": {
-  "heroTitle": "Il team Gen Z dietro ChallenZee",
-  "heroText":"ChallenZee è una piattaforma basata su sfide progettata per la Gen Z da parte della Gen Z. Connettiamo le persone attraverso esperienze divertenti, sociali e competitive ospitate in locali come bar, caffè, terrazze e spazi culturali." ,
+ "heroText": "ChallenZee è una piattaforma di nuova generazione che trasforma i luoghi reali in arene epiche di divertimento, competizione e comunità.",
+  "heroPlayersIntro": "Mettiamo in contatto tre attori chiave nel movimento delle sfide:",
+  "heroBulletChallengers": " Partecipanti: Unisciti a eventi gamificati unici per competere, vincere premi e scalare la classifica cittadina. Diventa il Re di ChallenZee della tua città.",
+  "heroBulletAmbassadors": " Ambasciatori: Cura e ospita i tuoi eventi di sfida. Stabilisci il prezzo, ricevi pieno supporto e costruisci il tuo brand come leader dell'intrattenimento locale.",
+  "heroBulletVenues": " Locali Commerciali: Apri le porte a esperienze indimenticabili. Noi portiamo gli eventi, le persone e la visibilità — tu guadagni da prenotazioni e consumazioni.",
+ "heroNetwork": "Insieme, stiamo costruendo una rete globale di eventi basati sulle sfide dove tutti possono crescere",
+
   "missionTitle": "La nostra missione",
    "mission1Emoji": "🎉",
    "mission1Text": "Dare significato al divertimento",
