@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 export const metadata: Metadata = {
   title: 'ChallenZee',
-  description: 'Created with v0',
+  description: 'A Gen Z platform for challenge events',
   generator: 'v0.dev',
   icons: {
     icon: [
@@ -26,7 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
       <body>{children}</body>
+
     </html>
   )
 }

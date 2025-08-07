@@ -1737,3 +1737,19 @@ html {
     font-size: 22px;
   }
 }
+@media (max-width: 475px) {
+  /* give the grid itself a little side padding */
+  .steps-grid,
+  .benefits-grid {
+    padding: 0 1rem;          /* 16px of “gutter” on left + right */
+    grid-template-columns: 1fr !important; /* force one-column layout */
+  }
+
+  /* ensure individual cards still fill their container */
+  .steps-grid .step-card,
+  .benefits-grid .benefit-card {
+    width: 100%;
+    max-width: none;
+    margin: 0;                /* remove any previous margins */
+  }
+}
