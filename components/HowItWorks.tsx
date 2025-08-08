@@ -2,18 +2,19 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { FaDownload } from "react-icons/fa";
 
 type RoleKey = "challenger" | "vendor" | "ambassador";
 
 const ROLES: { key: RoleKey; emoji: string; labelKey: string }[] = [
+  { key: "ambassador", emoji: "🌟", labelKey: "howItWorks.tabs.ambassador" },
   { key: "challenger", emoji: "🧑‍🎤", labelKey: "howItWorks.tabs.challenger" },
-  { key: "vendor",     emoji: "🏪",     labelKey: "howItWorks.tabs.vendor" },
-  { key: "ambassador", emoji: "🌟",     labelKey: "howItWorks.tabs.ambassador" },
+  { key: "vendor", emoji: "🏪", labelKey: "howItWorks.tabs.vendor" },
 ];
 
 const HowItWorks = () => {
   const { t } = useTranslation();
-  const [activeRole, setActiveRole] = useState<RoleKey>("challenger");
+  const [activeRole, setActiveRole] = useState<RoleKey>("ambassador");
 
   const steps: Record<RoleKey, { icon: string; title: string; description: string }[]> = {
     challenger: [
@@ -83,6 +84,32 @@ const HowItWorks = () => {
           ))}
         </div>
 
+                {activeRole === "ambassador" && (
+                  <div style={{ textAlign: "center", marginTop: "2rem" }}>
+                    <a
+                      href="/brochure.pdf"
+                      download
+                      className="brochure-download-btn"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "0.7rem",
+                        background: "linear-gradient(90deg, #954de6 0%, #fc9e4f 100%)",
+                        color: "#fff",
+                        fontWeight: 700,
+                        fontSize: "1.15rem",
+                        padding: "1rem 2.2rem",
+                        borderRadius: "2rem",
+                        boxShadow: "0 4px 20px rgba(149,77,230,0.13), 0 2px 8px rgba(252,158,79,0.10)",
+                        textDecoration: "none",
+                        transition: "transform 0.2s, box-shadow 0.2s, background 0.2s",
+                      }}
+                    >
+                      <FaDownload size={22} />
+                      {t("brochure.button")}
+                    </a>
+                  </div>
+                )}
         <div style={{ display: "flex", justifyContent: "center", marginTop: "2rem" }}>
           <button onClick={() => scrollToForm(activeRole)} className="apply-btn">
             {applyText}

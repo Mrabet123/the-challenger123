@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { FaArrowLeft, FaArrowRight, FaDownload } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 type RoleKey = "genz" | "business" | "ambassador";
 
@@ -101,32 +101,6 @@ const WhyJoinUs = () => {
                   ))}
                 </div>
 
-                {activeRole === "ambassador" && (
-                  <div style={{ textAlign: "center", marginTop: "2rem" }}>
-                    <a
-                      href="/brochure.pdf"
-                      download
-                      className="brochure-download-btn"
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: "0.7rem",
-                        background: "linear-gradient(90deg, #954de6 0%, #fc9e4f 100%)",
-                        color: "#fff",
-                        fontWeight: 700,
-                        fontSize: "1.15rem",
-                        padding: "1rem 2.2rem",
-                        borderRadius: "2rem",
-                        boxShadow: "0 4px 20px rgba(149,77,230,0.13), 0 2px 8px rgba(252,158,79,0.10)",
-                        textDecoration: "none",
-                        transition: "transform 0.2s, box-shadow 0.2s, background 0.2s",
-                      }}
-                    >
-                      <FaDownload size={22} />
-                      {t("brochure.button")}
-                    </a>
-                  </div>
-                )}
               </div>
             </div>
 
