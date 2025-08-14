@@ -1753,3 +1753,30 @@ html {
     margin: 0;                /* remove any previous margins */
   }
 }
+/* description only scrolls */
+.member-description {
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  scrollbar-width: thin;
+  padding-bottom: 0.25rem; /* tiny breathing room so last line isn't glued to the bottom */
+}
+
+/* keep space below the content so the link doesn't touch the panel edge */
+.member-link {
+  /* if you want it to visually separate from description add a little padding */
+  padding-bottom: 0.25rem;
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+  .member-description {
+    max-height: 50vh; /* give more vertical room for long text on small screens */
+  }
+  .member-detail-panel {
+    padding: 0.9rem 0.9rem 1.8rem 0.9rem; /* extra bottom padding to ensure link is comfortably visible */
+  }
+  .member-close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 1.8rem;
+  }
+}

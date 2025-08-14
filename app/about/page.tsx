@@ -25,9 +25,6 @@ interface TeamCategory {
   members: TeamMember[];
 }
 
-// Team data with TypeScript types
-
-
 const missionPoints = [1,2,3,4,5].map(i => ({
   emojiKey: `about.mission${i}Emoji`,
   textKey: `about.mission${i}Text`
@@ -45,23 +42,23 @@ const valuePoints = [
 export default function AboutPage() {
   const { t } = useTranslation();
   const [mounted, setMounted] = useState(false);
-  const [hoveredMember, setHoveredMember] = useState<TeamMember | null>(null);
-  
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+
   useEffect(() => { setMounted(true); }, []);
-  
   if (!mounted) return null;
-const teamCategoriesRaw = t('about.teamCategories', { returnObjects: true });
-const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw) 
-  ? teamCategoriesRaw 
-  : [];  const teamImages: Record<string, string> = {
+
+  const teamCategoriesRaw = t('about.teamCategories', { returnObjects: true });
+  const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw) 
+    ? teamCategoriesRaw 
+    : [];
+  const teamImages: Record<string, string> = {
     "Ghassen Mansouri": "/team/Ghassen Mansouri.jpg",
     "Nabil Mansouri": "/team/Nabil Mansouri.jpg",
     "Kardo Sharifi": "/team/Kardo Sharifi.jpg",
-     "Rami Ben Ahmed": "/team/Rami Ben Ahmed.jpg",
+    "Rami Ben Ahmed": "/team/Rami Ben Ahmed.jpg",
     "Yassine Mrabet": "/team/yassine.jpg",
     // "Chams Eddine Abderrahim": "/team/chams.jpg",
     "Amanda Martinez": "/team/Amanda Martinez.jpg",
-    "Alessia Nikolli": "/team/Alessia Nikolli.jpg",
     "Ottavia Oddone": "/team/Ottavia Oddone.jpg",
     "Mitri Tessera": "/team/Mitri Tessera.jpg",
     "Giorgia Casti": "/team/Giorgia Casti.jpg",
@@ -70,9 +67,10 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
     "Luka Devic": "/team/Luka Devic.jpg",
     "Amin Rezazade": "/team/Amin Rezazad.jpg",
     "Mohamed Achref Mannai":"/team/Ashref Manai.jpg",
-  "Amin Ben": "/team/Amin Ben.jpg",
-
+    "Amin Ben": "/team/Amin Ben.jpg",
+    "Zain.K": "/team/Zain.jpg",
   };
+
   return (
     <>
       <Navbar />
@@ -318,12 +316,11 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
                     <div
                       className="team-member-card"
                       key={`${catIndex}-${idx}`}
-                      onMouseEnter={() => setHoveredMember(member)}
-                      onMouseLeave={() => setHoveredMember(null)} // <-- add this line
+                      onClick={() => setSelectedMember(member)}
                       style={{
                         background: "#fff",
                         borderRadius: "1.5rem",
-                        boxShadow: hoveredMember?.name === member.name 
+                        boxShadow: selectedMember?.name === member.name 
                           ? "0 8px 32px rgba(149,77,230,0.18)" 
                           : "0 4px 24px rgba(149,77,230,0.10)",
                         padding: "1.8rem 1.2rem 1.5rem 1.2rem",
@@ -334,8 +331,9 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
                         alignItems: "center",
                         position: "relative",
                         overflow: "hidden",
-                        transform: hoveredMember?.name === member.name ? "translateY(-6px)" : "none",
-                        zIndex: hoveredMember?.name === member.name ? 10 : 1
+                        transform: selectedMember?.name === member.name ? "translateY(-6px)" : "none",
+                        zIndex: selectedMember?.name === member.name ? 10 : 1,
+                        cursor: "pointer"
                       }}
                     >
                       <div className="team-photo" style={{
@@ -383,7 +381,6 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
                         <p style={{ fontSize: "0.9rem", color: "#666", fontStyle: "italic" }}>
                           {member.location}
                         </p>
-                        
                       </div>
                     </div>
                   ))}
@@ -395,117 +392,144 @@ const teamCategories: TeamCategory[] = Array.isArray(teamCategoriesRaw)
         </section>
         
         {/* Member Detail Panel */}
-        {hoveredMember && (
-          <div className="member-detail-panel" style={{
-            position: "fixed",
-            bottom: "0",
-            left: "0",
-            right: "0",
-            background: "rgba(255,255,255,0.96)",
-            boxShadow: "0 -4px 20px rgba(0,0,0,0.1)",
-            padding: "2rem",
-            zIndex: 100,
-            borderTopLeftRadius: "2rem",
-            borderTopRightRadius: "2rem",
-            maxWidth: "1000px",
-            margin: "0 auto",
-            transform: "translateY(0)",
-            borderTop: "4px solid #954de6"
-          }}>
-            <div style={{
-              display: "flex",
-              alignItems: "flex-start",
-              gap: "1.5rem",
-              maxWidth: "900px",
-              margin: "0 auto"
-            }}>
-              <div style={{ flexShrink: 0 }}>
-                <Image
-                  src={teamImages[hoveredMember.name] || "/team/default.jpg"}
-                  alt={hoveredMember.name}
-                  width={100}
-                  height={100}
-                  style={{
-                    borderRadius: "50%",
-                    objectFit: "contain",
-                    border: "3px solid #fc9e4f"
-                  }}
-                />
-              </div>
-              
-              <div>
-                <h3 style={{ fontSize: "1.5rem", fontWeight: 800, color: "#954de6", marginBottom: "0.5rem" }}>
-                  {hoveredMember.name}
-                </h3>
-                
-                <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1rem" }}>
-                  <span style={{
-                    background: "rgba(149,77,230,0.1)",
-                    color: "#954de6",
-                    padding: "0.3rem 0.8rem",
-                    borderRadius: "1rem",
-                    fontWeight: 600,
-                    fontSize: "0.9rem"
-                  }}>
-                    {hoveredMember.role}
-                  </span>
-                  <span style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.3rem",
-                    fontSize: "0.9rem",
-                    color: "#666"
-                  }}>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                      <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    {hoveredMember.location}
-                  </span>
-                </div>
-                <p style={{ lineHeight: "1.6", color: "#444" }}>
-                  {hoveredMember.description}
-                </p>
-                {/* inside the hoveredMember panel JSX, after the description */}
-{hoveredMember.linkedin && (
-  <div style={{ marginTop: "1rem" }}>
-    <Link
-      href={hoveredMember.linkedin}
-      target="_blank"
-      rel="noopener noreferrer"
+{/* Member Detail Panel */}
+{selectedMember && (
+  <div
+    className="member-detail-panel"
+    style={{
+      position: "fixed",
+      bottom: "0",
+      left: "0",
+      right: "0",
+      margin: "0 auto",
+      zIndex: 100,
+      borderTopLeftRadius: "1.25rem",
+      borderTopRightRadius: "1.25rem",
+      borderTop: "4px solid #954de6",
+      background: "rgba(255,255,255,0.98)",
+      boxShadow: "0 -8px 30px rgba(0,0,0,0.08)",
+      maxWidth: "1000px",
+      width: "calc(100% - 24px)",
+      padding: "1.25rem 1rem 1.6rem 1rem", // increased bottom padding
+      overflow: "visible"
+    }}
+  >
+    {/* CLOSE button: absolutely positioned so it never scrolls away */}
+    <button
+      onClick={() => setSelectedMember(null)}
+      aria-label="Close member details"
+      className="member-close-btn"
       style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: "0.5rem",
-        color: "#0A66C2",
-        fontWeight: 600
+        position: "absolute",
+        top: "12px",
+        right: "16px",
+        background: "none",
+        border: "none",
+        fontSize: "1.6rem",
+        cursor: "pointer",
+        color: "#954de6",
+        zIndex: 40,
+        lineHeight: 1,
+        padding: "6px"
       }}
     >
-      <FaLinkedin size={20} />
-     {t("buttons.linkedinProfile")}
-    </Link>
+      &times;
+    </button>
+
+    <div
+      className="member-detail-inner"
+      style={{
+        display: "flex",
+        gap: "1rem",
+        alignItems: "flex-start",
+        minHeight: 0
+      }}
+    >
+      <div style={{ flexShrink: 0 }}>
+        <Image
+          src={teamImages[selectedMember.name] || "/team/default.jpg"}
+          alt={selectedMember.name}
+          width={100}
+          height={100}
+          style={{
+            borderRadius: "50%",
+            objectFit: "contain",
+            border: "3px solid #fc9e4f",
+            background: "#fff"
+          }}
+        />
+      </div>
+
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <h3 style={{ fontSize: "1.4rem", fontWeight: 800, color: "#954de6", marginBottom: "0.25rem" }}>
+          {selectedMember.name}
+        </h3>
+
+        <div style={{ display: "flex", gap: "0.75rem", alignItems: "center", flexWrap: "wrap", marginBottom: "0.75rem" }}>
+          <span style={{
+            background: "rgba(149,77,230,0.1)",
+            color: "#954de6",
+            padding: "0.25rem 0.6rem",
+            borderRadius: "0.8rem",
+            fontWeight: 600,
+            fontSize: "0.9rem"
+          }}>
+            {selectedMember.role}
+          </span>
+
+          <span style={{ display: "flex", alignItems: "center", gap: "0.35rem", color: "#666", fontSize: "0.9rem" }}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden>
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            {selectedMember.location}
+          </span>
+        </div>
+
+        {/* DESCRIPTION: only this area scrolls when long */}
+        <div
+          className="member-description"
+          style={{
+            overflowY: "auto",
+            maxHeight: "40vh",
+            paddingRight: "0.4rem",
+            color: "#444",
+            lineHeight: 1.6
+          }}
+        >
+          <p style={{ margin: 0 }}>
+            {selectedMember.description}
+          </p>
+        </div>
+
+        {/* LINK: moved OUTSIDE the scrollable description so it remains visible */}
+        {selectedMember.linkedin && (
+          <div
+            className="member-link"
+            style={{
+              marginTop: "0.9rem",
+              display: "flex",
+              gap: "0.5rem",
+              alignItems: "center"
+            }}
+          >
+            <Link
+              href={selectedMember.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", color: "#0A66C2", fontWeight: 600 }}
+            >
+              <FaLinkedin size={18} />
+              {t("buttons.linkedinProfile")}
+            </Link>
+          </div>
+        )}
+      </div>
+    </div>
   </div>
 )}
 
-              </div>
-              <button 
-                onClick={() => setHoveredMember(null)}
-                style={{
-                  position: "absolute",
-                  top: "1rem",
-                  right: "1.5rem",
-                  background: "none",
-                  border: "none",
-                  fontSize: "1.5rem",
-                  cursor: "pointer",
-                  color: "#954de6"
-                }}
-              >
-                &times;
-              </button>
-            </div>
-          </div>
-        )}
+
       </main>
       
       {/* Additional CSS for hover effects */}

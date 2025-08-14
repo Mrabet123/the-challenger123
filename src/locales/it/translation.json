@@ -320,7 +320,7 @@
         "members": [
           {
             "name": "Rami Ben Ahmed",
-            "role": "Product Manager & Technical Lead",
+            "role": "Responsabile di prodotto e responsabile tecnico",
             "location": "Con sede in Tunisia",
             "description": "Supervisiona lo sviluppo e l'implementazione del prodotto, lavorando a stretto contatto con l'ingegneria per modellare un'esperienza piattaforma centrata sull'utente."
           },
@@ -349,52 +349,37 @@
         "members": [
           {
             "name": "Amanda Martinez",
-            "role": "Brand Identity & Graphic Designer",
+            "role": "Identità del marchio e grafico",
             "location": "Con sede a Forlì, Italia",
             "description": "Specialista nella creazione di visual di marca vivaci ed esperienze digitali. Modella l'aspetto e la sensazione di ChallenZee con una profonda comprensione dell'appeal Gen Z."
-          },
-          {
-            "name": "Alessia Nikolli",
-            "role": "Specialista Marketing & Contenuti",
-            "location": "Con sede a Udine, Italia",
-            "description": "Laureata in marketing multilingue con esperienza pratica in campagne e ricerca. Coordina la creazione di contenuti, comunicazioni e messaggi di impatto sociale."
           },
           {
             "name": "Ottavia Oddone",
             "role": "Content Creator & Voce Comunità Gen Z",
             "location": "Con sede a Torino, Italia",
             "description": "Appassionata di psicologia sociale, presentatrice di eventi e creatrice di podcast. Porta storytelling autentico e insight Gen Z alla voce online del brand."
+          },
+          {
+            "name": "Zain.K",
+            "role": "Esperto di marketing digitale strategico",
+            "location": "Con sede in Pakistan",
+            "description": "Contribuisce alla crescita della nostra rete di eventi plasmando la nostra presenza online e guidando il coinvolgimento della comunità attraverso contenuti impattanti."
           }
+          
         ]
       },
       {
         "title": "Ambasciatori Cittadini",
         "subtitle": "(Accesso Anticipato - Pionieri del Movimento Go-To-Market)",
         "members": [
-          {
-            "name": "Mitri Tessera",
-            "role": "Ambasciatore Principale",
-            "location": "Milano, Italia",
-            "description": "Organizzatore di concerti e stratega digitale. Guida le attivazioni in fase iniziale di ChallenZee e la cura degli eventi di sfida a Milano."
-          },
+          
           {
             "name": "Giorgia Casti",
             "role": "Ambasciatrice Cittadina",
             "location": "Torino, Italia",
             "description": "Specialista di marketing e creatrice di contenuti di viaggio. Porta creatività e portata digitale agli eventi ChallenZee a Torino."
           },
-          {
-            "name": "Maria Milagaros",
-            "role": "Ambasciatrice Cittadina",
-            "location": "Torino, Italia",
-            "description": "Addetta all'ospitalità con esperienza in vari luoghi turistici. Promuove e supporta l'esecuzione degli eventi."
-          },
-          {
-            "name": "Vito",
-            "role": "Ambasciatore Cittadino & Curatore Eventi",
-            "location": "Bologna, Italia / Argentina",
-            "description": "Promotore di feste con ampia esperienza nell'esecuzione di eventi. Esperto in attivazioni universitarie, di club e di gruppi sociali."
-          },
+          
           {
             "name": "Luka Devic",
             "role": "Ambasciatore",

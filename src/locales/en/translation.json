@@ -362,16 +362,16 @@
             "description": "Specialist in crafting vibrant brand visuals and digital experiences. Shapes ChallenZee's look and feel with deep insight into Gen Z appeal."
           },
           {
-            "name": "Alessia Nikolli",
-            "role": "Marketing & Content Specialist",
-            "location": "Based in Udine, Italy",
-            "description": "Multilingual marketing graduate with real-world campaign and research experience. Coordinates content creation, communications, and social impact messaging."
-          },
-          {
             "name": "Ottavia Oddone",
             "role": "Content Creator & Gen Z Community Voice",
             "location": "Based in Torino, Italy",
             "description": "Social psychology enthusiast, event host, and podcast creator. Brings authentic storytelling and Gen Z insight to the brand's online voice."
+          },
+          {
+            "name": "Zain.K",
+            "role": "Strategic Digital Marketer",
+            "location": "Based in Pakistan",
+            "description": "Contributing to the growth of our events network by shaping our online presence and driving community engagement through impactful content."
           }
         ]
       },
@@ -379,30 +379,14 @@
         "title": "City Ambassadors",
         "subtitle": "(Early Access - Pioneering the Go-To-Market Movement)",
         "members": [
-          {
-            "name": "Mitri Tessera",
-            "role": "Lead Ambassador",
-            "location": "Milano, Italy",
-            "description": "Concert organizer & digital strategist. Leads ChallenZee's early-stage activations and challenge event curation in Milan."
-          },
+          
           {
             "name": "Giorgia Casti",
             "role": "City Ambassador",
             "location": "Torino, Italy",
             "description": "Marketing specialist and travel content creator. Brings creative flair and digital reach to ChallenZee events in Torino."
           },
-          {
-            "name": "Maria Milagaros",
-            "role": "City Ambassador",
-            "location": "Torino, Italy",
-            "description": "Hospitality insider with experience across tourism venues. Promotes and supports event execution."
-          },
-          {
-            "name": "Vito",
-            "role": "City Ambassador & Event Curator",
-            "location": "Bologna, Italy / Argentina",
-            "description": "Party promoter with extensive event execution experience. Expert in university, club, and social group activations."
-          },
+          
           {
             "name": "Luka Devic",
             "role": "Ambassador",
